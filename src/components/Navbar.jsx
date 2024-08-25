@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center h-20 max-w-6xl mx-auto px-4">
       {/* Logo */}
       <NavLink to="/">
-        <div className="lg:ml-[-6rem]">
+        <div className="">
           <img src={logo} className="h-9" alt="Logo" />
         </div>
       </NavLink>
@@ -41,8 +41,8 @@ const Navbar = () => {
         </button>
 
         {/* NavLinks */}
-        <div className="flex flex-col items-center gap-y-4 text-slate-100 -tracking-tighter font-medium">
-          <NavLink to="/" className="text-black text-2xl font-medium">
+        <div className="flex flex-col items-center gap-y-4 text-slate-100 -tracking-tighter ">
+          <NavLink to="/" className="text-black text-2xl hover:text-[#AC9E02] ">
             Home
           </NavLink>
           <div
@@ -51,7 +51,7 @@ const Navbar = () => {
             onMouseLeave={() => setCategoryDropdownOpen(false)}
           >
             <div className="flex items-center cursor-pointer">
-              <p className="text-black text-2xl font-medium">Category</p>
+              <p className="text-black text-2xl ">Category</p>
               <FiChevronDown className="ml-1 text-black text-xl" />
             </div>
             {/* Dropdown Menu */}
@@ -60,38 +60,32 @@ const Navbar = () => {
                 isCategoryDropdownOpen ? "block" : "hidden"
               } absolute mt-2 w-48 bg-white shadow-lg rounded-lg group-hover:block`}
             >
-              <NavLink
-                to="/"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-              >
+              <NavLink to="/" className="block px-4 py-2 text-gray-800">
                 HII
               </NavLink>
-              <NavLink
-                to="/"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-              >
+              <NavLink to="/" className="block px-4 py-2 text-gray-800">
                 Bye
               </NavLink>
             </div>
           </div>
-          <NavLink to="/" className="text-black text-2xl font-medium">
+          <NavLink to="/" className="text-black text-2xl ">
             SubCategory
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl font-medium">
+          <NavLink to="/" className="text-black text-2xl ">
             City
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl font-medium">
+          <NavLink to="/" className="text-black text-2xl ">
             Record Page
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl font-medium">
+          <NavLink to="/" className="text-black text-2xl ">
             My Story
           </NavLink>
         </div>
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex lg:flex-row lg:ml-[17rem] items-center gap-x-6 text-slate-100 -tracking-tighter font-medium">
-        <NavLink to="/" className="text-black text-2xl font-medium">
+      <div className="hidden lg:flex lg:flex-row lg:ml-[1rem] items-center gap-x-6 text-slate-100 -tracking-tighter ">
+        <NavLink to="/" className="text-black text-2xl hover:text-[#AC9E02]">
           Home
         </NavLink>
         <div
@@ -100,7 +94,7 @@ const Navbar = () => {
           onMouseLeave={() => setCategoryDropdownOpen(false)}
         >
           <div className="flex items-center cursor-pointer">
-            <p className="text-black text-2xl font-medium">Category</p>
+            <p className="text-black text-2xl hover:text-[#AC9E02]">Category</p>
             <FiChevronDown className="ml-1 text-black text-xl" />
           </div>
           {/* Dropdown Menu */}
@@ -111,28 +105,28 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              className="block hover:text-[#AC9E02] px-4 py-2 text-gray-800"
             >
               HII
             </NavLink>
             <NavLink
               to="/"
-              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              className="block hover:text-[#AC9E02] px-4 py-2 text-gray-800"
             >
               Bye
             </NavLink>
           </div>
         </div>
-        <NavLink to="/" className="text-black text-2xl font-medium">
+        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
           SubCategory
         </NavLink>
-        <NavLink to="/" className="text-black text-2xl font-medium">
+        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
           City
         </NavLink>
-        <NavLink to="/" className="text-black text-2xl font-medium">
+        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
           Record Page
         </NavLink>
-        <NavLink to="/" className="text-black text-2xl font-medium">
+        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
           My Story
         </NavLink>
       </div>
