@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
-import logo from "../assets/astrotalk-header-logo.webp";
+import logo from "../../assets/astrotalk-header-logo.webp";
 
 const Navbar = () => {
   const [isCategoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
