@@ -30,19 +30,19 @@ const Navbar = () => {
       <div
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-0 right-0 w-full h-full bg-white z-50 p-4 lg:hidden`}
+        } absolute top-0 py-12 bg-black text-white  right-0 w-full h-full  z-50 p-4 lg:hidden`}
       >
         {/* Close Button */}
         <button
           onClick={() => setMobileMenuOpen(false)}
-          className="absolute top-4 right-4 text-black focus:outline-none"
+          className="absolute top-4 right-4  focus:outline-none"
         >
           <FiX size={24} />
         </button>
 
         {/* NavLinks */}
         <div className="flex flex-col items-center gap-y-4 text-slate-100 -tracking-tighter ">
-          <NavLink to="/" className="text-black text-2xl hover:text-[#AC9E02] ">
+          <NavLink to="/" className=" text-2xl hover:text-[#AC9E02] ">
             Home
           </NavLink>
           <div
@@ -51,8 +51,8 @@ const Navbar = () => {
             onMouseLeave={() => setCategoryDropdownOpen(false)}
           >
             <div className="flex items-center cursor-pointer">
-              <p className="text-black text-2xl ">Category</p>
-              <FiChevronDown className="ml-1 text-black text-xl" />
+              <p className=" text-2xl ">Category</p>
+              <FiChevronDown className="ml-1  text-xl" />
             </div>
             {/* Dropdown Menu */}
             <div
@@ -68,16 +68,16 @@ const Navbar = () => {
               </NavLink>
             </div>
           </div>
-          <NavLink to="/" className="text-black text-2xl ">
+          <NavLink to="/" className=" text-2xl ">
             SubCategory
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl ">
+          <NavLink to="/" className=" text-2xl ">
             City
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl ">
+          <NavLink to="/" className=" text-2xl ">
             Record Page
           </NavLink>
-          <NavLink to="/" className="text-black text-2xl ">
+          <NavLink to="/" className=" text-2xl ">
             My Story
           </NavLink>
         </div>
