@@ -3,7 +3,7 @@ import BannerHome from '../components/BannerHome'
 
 const Home = () => {
   return (
-    <div>
+    <div className=' flex justify-center '>
       <BannerHome></BannerHome>
     </div>
    
