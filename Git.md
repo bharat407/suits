@@ -9,5 +9,6 @@
 -> git branch -r
 -> git push
 -> git pull origin main <!-- Remote repo latest chnage fetch and up to date -->
+-> git checkout main 
 -> git merge <branch-name> <!-- Branch merge into main repo -->
 -> git push origin main <!--Push into main branch-->
