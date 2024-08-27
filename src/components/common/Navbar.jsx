@@ -94,11 +94,11 @@ const Header = () => {
           <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition">
             Investor Relations
           </a>
-          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
+          <a className="text-black gap-1 hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
             <FcAdvertising />
             Advertise
           </a>
-          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
+          <a className="text-black gap-1 hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
             <BsGraphUpArrow />
             Free Listing
           </a>
