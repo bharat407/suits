@@ -1,137 +1,119 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
-import logo from "../../assets/astrotalk-header-logo.webp";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
+import { FcAdvertising } from "react-icons/fc";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { MdNotificationsActive } from "react-icons/md";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Navbar = () => {
-  const [isCategoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+const Header = () => {
   return (
-    <div className="flex justify-between items-center h-20 max-w-6xl mx-auto px-4">
-      {/* Logo */}
-      <NavLink to="/">
-        <div className="">
-          <img src={logo} className="h-9" alt="Logo" />
-        </div>
-      </NavLink>
-
-      {/* Hamburger Icon for Mobile */}
-      <div className="lg:hidden flex items-center">
-        <button
-          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-black focus:outline-none"
-        >
-          <FiMenu size={24} />
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`${
-          isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-0 py-12 bg-black text-white  right-0 w-full h-full  z-50 p-4 lg:hidden`}
-      >
-        {/* Close Button */}
-        <button
-          onClick={() => setMobileMenuOpen(false)}
-          className="absolute top-4 right-4  focus:outline-none"
-        >
-          <FiX size={24} />
-        </button>
-
-        {/* NavLinks */}
-        <div className="flex flex-col items-center gap-y-4 text-slate-100 -tracking-tighter ">
-          <NavLink to="/" className=" text-2xl hover:text-[#AC9E02] ">
-            Home
-          </NavLink>
-          <div
-            className="relative group"
-            onMouseEnter={() => setCategoryDropdownOpen(true)}
-            onMouseLeave={() => setCategoryDropdownOpen(false)}
+    <header className="bg-white shadow-sm p-2">
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
+        {/* Left Section: Logo */}
+        <div className="flex ml-7 items-center">
+          <a
+            href="/"
+            aria-label="Justdial"
+            title="Justdial"
+            className="flex items-center"
           >
-            <div className="flex items-center cursor-pointer">
-              <p className=" text-2xl ">Category</p>
-              <FiChevronDown className="ml-1  text-xl" />
-            </div>
-            {/* Dropdown Menu */}
-            <div
-              className={`${
-                isCategoryDropdownOpen ? "block" : "hidden"
-              } absolute mt-2 w-48 bg-white shadow-lg rounded-lg group-hover:block`}
-            >
-              <NavLink to="/" className="block px-4 py-2 text-gray-800">
-                HII
-              </NavLink>
-              <NavLink to="/" className="block px-4 py-2 text-gray-800">
-                Bye
-              </NavLink>
-            </div>
-          </div>
-          <NavLink to="/" className=" text-2xl ">
-            SubCategory
-          </NavLink>
-          <NavLink to="/" className=" text-2xl ">
-            City
-          </NavLink>
-          <NavLink to="/" className=" text-2xl ">
-            Record Page
-          </NavLink>
-          <NavLink to="/" className=" text-2xl ">
-            My Story
-          </NavLink>
+            <img
+              src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd/jdlogosvg.svg"
+              alt="Justdial Logo"
+              className="h-8 w-auto"
+            />
+          </a>
         </div>
-      </div>
 
-      {/* Desktop Menu */}
-      <div className="hidden lg:flex lg:flex-row lg:ml-[1rem] items-center gap-x-6 text-slate-100 -tracking-tighter ">
-        <NavLink to="/" className="text-black text-2xl hover:text-[#AC9E02]">
-          Home
-        </NavLink>
-        <div
-          className="relative group"
-          onMouseEnter={() => setCategoryDropdownOpen(true)}
-          onMouseLeave={() => setCategoryDropdownOpen(false)}
-        >
-          <div className="flex items-center cursor-pointer">
-            <p className="text-black text-2xl hover:text-[#AC9E02]">Category</p>
-            <FiChevronDown className="ml-1 text-black text-xl" />
+        {/* Right Section: Navigation */}
+        <div className="flex items-center gap-2 ">
+          {/* Language Dropdown */}
+          <div className="relative group">
+            <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-2 py-2 font-medium flex items-center space-x-1">
+              <img
+                src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
+                alt=""
+              />
+              <span>EN</span>
+              <RiArrowDropDownLine size={28} />
+            </button>
+            {/* Dropdown content (hidden by default) */}
+            <div className="absolute left-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                English - EN
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                हिंदी - HI
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                मराठी - MR
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                বেঙ্গলি - BN
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                ગુજરાતી - GU
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                ಕನ್ನಡ - KN
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
+              >
+                தமிழ் - TA
+              </a>
+            </div>
           </div>
-          {/* Dropdown Menu */}
-          <div
-            className={`${
-              isCategoryDropdownOpen ? "block" : "hidden"
-            } absolute mt-2 w-48 bg-white shadow-lg rounded-lg group-hover:block`}
+
+          {/* Navigation Links */}
+          <a className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition">
+            We are Hiring
+          </a>
+          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition">
+            Investor Relations
+          </a>
+          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
+            <FcAdvertising />
+            Advertise
+          </a>
+          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
+            <BsGraphUpArrow />
+            Free Listing
+          </a>
+          <a
+            href="#"
+            className="text-black  hover:bg-[#EBEBEB] px-2 py-2 cursor-pointer hover:rounded-md transition"
           >
-            <NavLink
-              to="/"
-              className="block hover:text-[#AC9E02] px-4 py-2 text-gray-800"
-            >
-              HII
-            </NavLink>
-            <NavLink
-              to="/"
-              className="block hover:text-[#AC9E02] px-4 py-2 text-gray-800"
-            >
-              Bye
-            </NavLink>
-          </div>
+            <MdNotificationsActive size={22} />
+          </a>
+
+          {/* Login Button */}
+          <button className="bg-[#0076d7] text-white mr-[2rem] px-4 py-1 rounded-md hover:bg-[#41A9FF] transition">
+            Login / Sign Up
+          </button>
         </div>
-        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
-          SubCategory
-        </NavLink>
-        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
-          City
-        </NavLink>
-        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
-          Record Page
-        </NavLink>
-        <NavLink to="/" className="text-black hover:text-[#AC9E02] text-2xl ">
-          My Story
-        </NavLink>
       </div>
-    </div>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;
