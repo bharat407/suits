@@ -32,7 +32,7 @@ const Header = () => {
         {/* Right Section: Navigation */}
         <div className="hidden md:flex items-center gap-2">
           {/* Language Dropdown */}
-          <div className="relative group">
+          <div className="relative z-[999] group">
             <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-2 py-2 font-medium flex items-center space-x-1">
               <img
                 src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
