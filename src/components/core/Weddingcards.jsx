@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "../../data/Wedding";
+import { Data } from "../../Data/Wedding";
 
 const WeddingRequisites = () => {
   return (

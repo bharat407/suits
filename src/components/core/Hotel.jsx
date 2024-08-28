@@ -7,7 +7,7 @@ import {
   FaCommentAlt,
 } from "react-icons/fa";
 
-import { Data } from "../../data/Hotel";
+import { Hotel } from "../../Data/Hotel";
 
 const HotelListing = () => {
   const {
@@ -22,7 +22,7 @@ const HotelListing = () => {
     phoneNumber,
     recentEnquiries,
     imageUrl,
-  } = Data;
+  } = Hotel;
 
   return (
     //   border border-gray-500 rounded-lg p-6 w-[70%] mb-3

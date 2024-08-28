@@ -1,4 +1,4 @@
-export const Data = {
+export const Hotel = {
   id: 1,
   name: "Manpho Bell Hotel & Convention Center",
   rating: 4.0,
