@@ -11,7 +11,7 @@ const WeddingRequisites = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-[75%] h-full object-cover rounded-lg mb-2"
+              className="w-[75%] cursor-pointer h-full object-cover rounded-lg mb-2"
             />
             <div className="w-[75%] text-center font-normal">{item.title}</div>
           </div>
