@@ -3,24 +3,26 @@ import kalash from "../../assets/kalsh.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { FaStar } from "react-icons/fa";
 
 const Catelog = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto flex flex-col md:flex-row">
-      <div className="max-w-[1400px] relative md:w-[73%] w-[99%] px-2 justify-center items-center flex md:flex-row flex-col py-10 md:py-6 mx-auto my-4 border border-gray-500 rounded-lg">
-        <span className="absolute right-2 top-2 ">
-          <CiHeart />
+    <div className="w-full max-w-[1400px]  flex mx-auto  flex-col md:flex-row">
+      <div className="max-w-[1400px] relative md:w-[70%] w-[99%] px-2 gap-8 items-center flex md:flex-row flex-col py-10 md:py-6 mx-auto my-4 border border-gray-500 rounded-lg">
+        <span className="absolute right-2 top-2  ">
+          <CiHeart className="text-3xl" />
         </span>
-        <div className="image-carousel w-[25%] flex justify-center items-center">
+        <div className="image-carousel w-[25%] flex justify-center items-center border border-gray-700">
           <img className="" src={kalash} width={200} alt="" />
         </div>
         <div className="description md:w-[60%] w-[95%] justify-center items-center lg:justify-normal lg:items-baseline flex flex-col gap-2">
-          <h1 className="text-2xl">Shubh Banequets</h1>
+          <h1 className="text-3xl font-semibold">Shubh Banequets</h1>
           <div className="flex justify-center items-center gap-2">
             <div className="rattings w-8 h-8 flex justify-center items-center rounded-md bg-green-600 text-white">
               <h2>4.2</h2>
             </div>
             <div className="start"></div>
+            <FaStar /><FaStar /><FaStar /><FaStar />
             <p className="rattings ">319 Rattings</p>
           </div>
           <div className="address">
