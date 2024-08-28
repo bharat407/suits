@@ -11,10 +11,10 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md p-4">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
         {/* Left Section: Logo */}
-        <div className="flex ml-7 items-center">
+        <div className="flex ml-5 items-center">
           <a
             href="/"
             aria-label="Justdial"
@@ -107,7 +107,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white p-4 shadow-md rounded-md">
+        <div className="md:hidden bg-white p-4 shadow-md rounded-md mt-2">
           {[
             "We are Hiring",
             "Investor Relations",
