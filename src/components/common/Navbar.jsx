@@ -11,10 +11,10 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm p-2">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
         {/* Left Section: Logo */}
-        <div className="flex ml-7 items-center">
+        <div className="flex ml-5 items-center">
           <a
             href="/"
             aria-label="Justdial"
@@ -30,10 +30,10 @@ const Header = () => {
         </div>
 
         {/* Right Section: Navigation */}
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-4">
           {/* Language Dropdown */}
           <div className="relative z-[999] group">
-            <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-2 py-2 font-medium flex items-center space-x-1">
+            <button className="text-[#0076D7] hover:bg-[#f5f5f5] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
               <img
                 src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
                 alt=""
@@ -42,75 +42,54 @@ const Header = () => {
               <RiArrowDropDownLine size={28} />
             </button>
             <div className="absolute left-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                English - EN
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                हिंदी - HI
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                मराठी - MR
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                বেঙ্গলি - BN
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                ગુજરાતી - GU
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                ಕನ್ನಡ - KN
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
-              >
-                தமிழ் - TA
-              </a>
+              {[
+                "English - EN",
+                "हिंदी - HI",
+                "मराठी - MR",
+                "বেঙ্গলি - BN",
+                "ગુજરાતી - GU",
+                "ಕನ್ನಡ - KN",
+                "தமிழ் - TA",
+              ].map((lang, index) => (
+                <a
+                  href="#"
+                  key={index}
+                  className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#f5f5f5]"
+                >
+                  {lang}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Navigation Links */}
-          <a className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition">
-            We are Hiring
-          </a>
-          <a className="text-black  hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition">
-            Investor Relations
-          </a>
-          <a className="text-black gap-1 hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
-            <FcAdvertising />
-            Advertise
-          </a>
-          <a className="text-black gap-1 hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2  transition flex items-center">
-            <BsGraphUpArrow />
-            Free Listing
-          </a>
+          {[
+            "We are Hiring",
+            "Investor Relations",
+            "Advertise",
+            "Free Listing",
+          ].map((text, index) => (
+            <a
+              key={index}
+              className="text-black hover:bg-[#f5f5f5] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+            >
+              {index === 2 ? (
+                <FcAdvertising />
+              ) : index === 3 ? (
+                <BsGraphUpArrow />
+              ) : null}
+              {text}
+            </a>
+          ))}
           <a
             href="#"
-            className="text-black  hover:bg-[#EBEBEB] px-2 py-2 cursor-pointer hover:rounded-md transition"
+            className="text-black hover:bg-[#f5f5f5] px-3 py-2 cursor-pointer hover:rounded-md transition"
           >
             <MdNotificationsActive size={22} />
           </a>
 
           {/* Login Button */}
-          <button className="bg-[#0076d7] text-white mr-[2rem] px-4 py-1 rounded-md hover:bg-[#41A9FF] transition">
+          <button className="bg-[#0076d7] text-white mr-8 px-4 py-2 rounded-md hover:bg-[#41A9FF] transition">
             Login / Sign Up
           </button>
         </div>
@@ -119,7 +98,7 @@ const Header = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-black hover:bg-[#EBEBEB] p-2 rounded-md transition"
+            className="text-black hover:bg-[#f5f5f5] p-2 rounded-md transition"
           >
             {isMobileMenuOpen ? <IoMdClose size={24} /> : <HiMenu size={24} />}
           </button>
@@ -128,22 +107,25 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white p-4">
-          <a className="block text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition">
-            We are Hiring
-          </a>
-          <a className="block text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition">
-            Investor Relations
-          </a>
-          <a className=" text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition flex items-center">
-            <FcAdvertising />
-            Advertise
-          </a>
-          <a className=" text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-2 py-2 transition flex items-center">
-            <BsGraphUpArrow />
-            Free Listing
-          </a>
-          {/* Login Button */}
+        <div className="md:hidden bg-white p-4 shadow-md rounded-md mt-2">
+          {[
+            "We are Hiring",
+            "Investor Relations",
+            "Advertise",
+            "Free Listing",
+          ].map((text, index) => (
+            <a
+              key={index}
+              className="text-black hover:bg-[#f5f5f5] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+            >
+              {index === 2 ? (
+                <FcAdvertising />
+              ) : index === 3 ? (
+                <BsGraphUpArrow />
+              ) : null}
+              {text}
+            </a>
+          ))}
           <button className="w-full bg-[#0076d7] text-white px-4 py-2 rounded-md hover:bg-[#41A9FF] transition mt-2">
             Login / Sign Up
           </button>
