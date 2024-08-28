@@ -33,7 +33,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-4">
           {/* Language Dropdown */}
           <div className="relative z-[999] group">
-            <button className="text-[#0076D7] hover:bg-[#f5f5f5] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
+            <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
               <img
                 src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
                 alt=""
@@ -54,7 +54,7 @@ const Header = () => {
                 <a
                   href="#"
                   key={index}
-                  className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#f5f5f5]"
+                  className="block px-4 py-2 text-gray-800 hover:text-[#0076D7] hover:bg-[#EBEBEB]"
                 >
                   {lang}
                 </a>
@@ -71,7 +71,7 @@ const Header = () => {
           ].map((text, index) => (
             <a
               key={index}
-              className="text-black hover:bg-[#f5f5f5] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+              className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
             >
               {index === 2 ? (
                 <FcAdvertising />
@@ -83,7 +83,7 @@ const Header = () => {
           ))}
           <a
             href="#"
-            className="text-black hover:bg-[#f5f5f5] px-3 py-2 cursor-pointer hover:rounded-md transition"
+            className="text-black hover:bg-[#EBEBEB] px-3 py-2 cursor-pointer hover:rounded-md transition"
           >
             <MdNotificationsActive size={22} />
           </a>
@@ -98,7 +98,7 @@ const Header = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-black hover:bg-[#f5f5f5] p-2 rounded-md transition"
+            className="text-black hover:bg-[#EBEBEB] p-2 rounded-md transition"
           >
             {isMobileMenuOpen ? <IoMdClose size={24} /> : <HiMenu size={24} />}
           </button>
@@ -116,7 +116,7 @@ const Header = () => {
           ].map((text, index) => (
             <a
               key={index}
-              className="text-black hover:bg-[#f5f5f5] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+              className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
             >
               {index === 2 ? (
                 <FcAdvertising />
