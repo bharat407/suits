@@ -30,7 +30,7 @@ const Header = () => {
         </div>
 
         {/* Right Section: Navigation */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center">
           {/* Language Dropdown */}
           <div className="relative z-[999] group">
             <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
@@ -71,7 +71,7 @@ const Header = () => {
           ].map((text, index) => (
             <a
               key={index}
-              className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+              className="text-black hover:bg-[#EBEBEB] gap-2 cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
             >
               {index === 2 ? (
                 <FcAdvertising />
@@ -83,7 +83,7 @@ const Header = () => {
           ))}
           <a
             href="#"
-            className="text-black hover:bg-[#EBEBEB] px-3 py-2 cursor-pointer hover:rounded-md transition"
+            className="text-black hover:bg-[#EBEBEB] px-3 py-2 mr-2 cursor-pointer hover:rounded-md transition"
           >
             <MdNotificationsActive size={22} />
           </a>
