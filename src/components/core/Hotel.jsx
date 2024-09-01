@@ -25,14 +25,17 @@ const HotelListing = () => {
   } = Hotel;
 
   return (
-    //   border border-gray-500 rounded-lg p-6 w-[70%] mb-3
-    <div className="max-w-2xl mx-auto bg-white shadow-lg border border-gray-500 p-6 mb-3 w-[70%] rounded-lg overflow-hidden">
+
+
+    <div className="flex flex-col md:flex-row mx-auto max-w-[1400px] w-[full] justify-center items-center gap-3 ">
+
+    <div className="max-w-2xl  bg-white shadow-lg border border-gray-500 p-3 w-[98%] md:w-[75%] rounded-lg overflow-hidden">
       <div className="flex items-center">
         <div className="w-1/3 relative">
           <img
             src={imageUrl}
             alt={name}
-            className="w-full rounded-lg h-[70%] object-cover"
+            className="w-full rounded-lg  object-cover"
           />
         </div>
         <div className="w-2/3 p-5">
@@ -94,6 +97,48 @@ const HotelListing = () => {
             {recentEnquiries} people recently enquired
           </div>
         </div>
+      </div>
+
+    
+    </div>
+      {/* sidebar section */}
+      <div className="sidebar w-[95%]  md:w-[24%] flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 my-4">
+        <h1 className="flex gap-1 font-semibold">
+          Get the list of top <p className="text-blue-700">Banquet Halls</p>
+        </h1>
+        <p className="text-sm">
+          We'll send you contact details in seconds for free
+        </p>
+        <h3 className="font-semibold">
+          What Type of Banquet Hall You are looking for?{" "}
+        </h3>
+        <form action="" className="flex flex-col gap-2">
+          <div className="flex gap-4">
+            <div className="flex gap-2">
+              {" "}
+              <input type="radio" name="ac" id="ac" />
+              <label htmlFor="">AC Banquet Halls</label>
+            </div>
+            <div className="flex gap-2">
+              <input type="radio" name="ac" id="ac" />
+              <label htmlFor="">AC Banquet Halls</label>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Name"
+            className="border border-gray-500 rounded-sm outline-none px-2 py-1 w-full"
+          />
+          <input
+            type="number"
+            placeholder="Mobile Number"
+            className="border border-gray-500 rounded-sm outline-none w-full py-1 px-2"
+          />
+          <button className="bg-blue-600 rounded-md w-full py-2 text-white">
+            Get Best Deal
+          </button>
+        </form>
       </div>
     </div>
   );

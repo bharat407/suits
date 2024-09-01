@@ -13,12 +13,12 @@ const App = () => {
     <>
       <Navbar />
       <Carousal />
+      <HeroHome/>
       <MainCategory />
       <Hotel />
     
       <SpeedInsights />
       <Analytics />
-      <HeroHome/>
     </>
   );
 };

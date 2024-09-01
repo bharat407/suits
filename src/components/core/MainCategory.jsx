@@ -5,7 +5,7 @@ import Service from "./Service";
 import Daily from "./Daily";
 const MainCategory = () => {
   return (
-    <div className=" p-7 mt-3">
+    <div className=" p-7 mt-3 mx-auto max-w-[1400px]">
       <div className="flex flex-row px-2">
         <Wedding />
         <Spa />
