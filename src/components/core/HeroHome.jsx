@@ -54,7 +54,7 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className='max-w-[1400px] w-full h-[40vh] my-2 flex md:flex-row flex-col gap-6 justify-center mx-auto items-center'>
+    <div className='max-w-[1400px] w-full h-[40vh] px-6 my-2 flex md:flex-row flex-col gap-6 justify-center mx-auto items-center'>
         <Carousel className="h-full basis-[50%]"/>
       <div className='category-card rounded-lg flex gap-4 md:basis-[50%] w  -[98%] h-full'>
         <CategoryCard className="basis-[32%]" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Electritian"></CategoryCard>
