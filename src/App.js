@@ -7,13 +7,10 @@ import Carousal from "./pages/Accomdation";
 import MainCategory from "./components/core/MainCategory";
 import Hotel from "./components/core/Hotel";
 import HeroHome from "./components/core/HeroHome";
-<<<<<<< HEAD
+
 import Service from "./components/core/Service"
 import Search from "./components/common/SearchBar"
-=======
 import PopularSearches from "./components/core/PopularSearches";
-
->>>>>>> 6793bb1ff1af95113909684b5ddb35331131bd94
 
 const App = () => {
   return (
@@ -26,6 +23,7 @@ const App = () => {
       <MainCategory />
       <Hotel />
       <SpeedInsights />
+      <PopularSearches></PopularSearches>
       <Analytics />
     </div>
   );
