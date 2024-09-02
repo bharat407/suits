@@ -12,7 +12,7 @@ import PopularSearches from "./components/core/PopularSearches";
 
 const App = () => {
   return (
-    <>
+    <div className="w-screen">
       <Navbar />
       <Carousal />
       <HeroHome/>
@@ -21,8 +21,7 @@ const App = () => {
     
       <SpeedInsights />
       <Analytics />
-      <PopularSearches/>
-    </>
+    </div>
   );
 };
 
