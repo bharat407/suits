@@ -7,6 +7,8 @@ import Carousal from "./pages/Accomdation";
 import MainCategory from "./components/core/MainCategory";
 import Hotel from "./components/core/Hotel";
 import HeroHome from "./components/core/HeroHome";
+import PopularSearches from "./components/core/PopularSearches";
+
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
     
       <SpeedInsights />
       <Analytics />
+      <PopularSearches/>
     </>
   );
 };
