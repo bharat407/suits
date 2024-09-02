@@ -1,14 +1,17 @@
 import React from 'react'
 import skincare from "../../assets/skin care.jpg"
 import Slider from "react-slick";
+import { FaGreaterThan } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CategoryCard = ({source, text}) => {
+const CategoryCard = ({source, text,desc}) => {
   return (
-    <div className='rounded-lg flex  flex-col relative w-full bg-blue-300 items-center justify-center'>
-      <p className='text-left'>{text}</p>
-      <img src={source} width={160} className=' absolute ' alt="image" />
+    <div className='rounded-lg flex  flex-col relative bg-purple-300 basis-[15%] items-center overflow-hidden justify-center'>
+      <p className='text-left absolute left-2 top-2  text-lg font-semibold'>{text}</p>
+      <p className='text-base text-slate-500 absolute top-8 left-2 w-1/3'>{desc}</p>
+      <img src={source} width={180} className=' absolute right-[-25%]  bottom-[0%] hover:scale-[1.25]' alt="image" />
+      <button className='absolute bg-purple-500 px-1 py-1 rounded-md left-0 bottom-8 ml-1 hover:grow'><FaGreaterThan></FaGreaterThan></button>
     </div>
   )
 }
@@ -16,7 +19,7 @@ const CategoryCard = ({source, text}) => {
 const Carousel = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -34,7 +37,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="md:w-1/2 w-full lg:mx-0 mx-4 ">
+    <div className="md:w-1/2 w-full  lg:mx-0 mx-4 ">
       <Slider {...settings} >
         {images.map((img, index) => (
           <div key={index}>
@@ -54,12 +57,14 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className='max-w-[1400px] w-full h-[40vh] px-6 my-2 flex md:flex-row flex-col gap-6 justify-center mx-auto items-center'>
-        <Carousel className="h-full basis-[50%]"/>
-      <div className='category-card rounded-lg flex gap-4 md:basis-[50%] w  -[98%] h-full'>
-        <CategoryCard className="basis-[32%]" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Electritian"></CategoryCard>
-        <CategoryCard className="basis-[32%]" source="https://png.pngtree.com/png-vector/20220118/ourmid/pngtree-cartoon-worker-for-refueling-auto-repair-vector-vehicle-repair-png-image_4189126.png " text="Mechanic"></CategoryCard>
-        <CategoryCard className="basis-[32%]" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor"></CategoryCard>
+    <div className='max-w-[1400px] w-full h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto'>
+
+        <Carousel className=" basis-[40%] "/>
+      <div className='category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%] w-[98%] h-full'>
+        <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Electritian" desc="Get nearest Vendors" ></CategoryCard>
+        <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Mechanic" desc="Finest Agents"></CategoryCard>
+        <CategoryCard className="" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor"></CategoryCard>
+        <CategoryCard className="" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor" desc="Consult Now"></CategoryCard>
       </div>
     </div>
   )

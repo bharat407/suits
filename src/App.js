@@ -10,7 +10,7 @@ import HeroHome from "./components/core/HeroHome";
 
 const App = () => {
   return (
-    <>
+    <div className="w-screen">
       <Navbar />
       <Carousal />
       <HeroHome/>
@@ -19,7 +19,7 @@ const App = () => {
     
       <SpeedInsights />
       <Analytics />
-    </>
+    </div>
   );
 };
 
