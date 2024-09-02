@@ -6,7 +6,7 @@ const SearchBar = () => {
     return (
         <React.Fragment>
 
-            <div className='flex flex-col mx-auto w-full gap-2 my-2 px-6 max-w-[1400px]'>
+            <div className='flex flex-col mx-auto w-full gap-2 my-2 mt-12 px-6 max-w-[1400px]'>
                 <h2 className='text-3xl font-semibold'>
                     Search across '5.6 Crore+' Business
                 </h2>
