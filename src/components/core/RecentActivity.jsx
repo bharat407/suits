@@ -44,7 +44,7 @@ const PGCard = ({ pg }) => {
         <div className="flex items-center mt-2">
           <img
             className="w-8 h-8 rounded-full"
-            src="path_to_profile_picture" // Replace with reviewer profile image if available
+            src="path_to_profile_picture" 
             alt={pg.reviewer}
           />
           <p className="ml-3 text-gray-700">{pg.reviewer}</p>
