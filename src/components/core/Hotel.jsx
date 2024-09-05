@@ -27,11 +27,10 @@ const HotelListing = () => {
   return (
 
 
-    // <div className="flex flex-col md:flex-row mx-auto max-w-[1400px] w-[full] justify-center items-center gap-3 ">
 
-      <div className=" flex bg-white shadow-lg gap-2   px-2 mx-auto w-full rounded-lg overflow-hidden">
-        <div className="flex items-center w-[75%] gap-4 px-4 border-gray-500 border rounded-lg">
-          <div className="w-1/4 relative">
+      <div className=" flex lg:flex-row flex-col bg-white shadow-lg gap-2 py-2 items-center px-2 mx-auto w-full rounded-lg overflow-hidden">
+        <div className="flex  items-center relative w-[74%] h-full py-6 gap-4 px-4 border-gray-500 border rounded-lg">
+          <div className="w-[30%] ">
             <img
               src={imageUrl}
               alt={name}
@@ -39,9 +38,9 @@ const HotelListing = () => {
             />
           </div>
           <div className="w-2/3 ">
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start ">
               <h2 className="text-xl font-bold">{name}</h2>
-              <FaRegHeart size={34} className="text-black  " />
+              <FaRegHeart size={34} className="text-black absolute top-2 right-4  " />
             </div>
             <div className="flex gap-2 items-center my-1">
               {[...Array(5)].map((_, i) => (
@@ -84,7 +83,7 @@ const HotelListing = () => {
                 <FaPhone className="w-4 h-4 mr-2" />
                 {phoneNumber}
               </button>
-              <button className=" bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-1 min-w-[40%] rounded">
+              <button className=" bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  rounded">
                 Get Best Deal
               </button>
               <button className=" border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold py-2 px-4 rounded flex items-center">
@@ -100,7 +99,7 @@ const HotelListing = () => {
 
 
 {/* sidebar section */}
-        <div className="sidebar w-[95%]  md:w-[24%] flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 my-4">
+        <div className="sidebar w-[95%]  md:w-[24%] flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 ">
           <h1 className="flex gap-1 font-semibold">
             Get the list of top <p className="text-blue-700">Banquet Halls</p>
           </h1>
