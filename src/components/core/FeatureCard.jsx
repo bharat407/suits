@@ -1,5 +1,5 @@
 import React from "react";
-import beauty from ".../assets/FeatureIcons/beauty.svg"
+import beauty from "../../assets/FeatureIcons/beauty.svg"
 
 
 const Features =({text,source})=>{

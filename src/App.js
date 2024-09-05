@@ -11,22 +11,16 @@ import Service from "./components/core/Service";
 import Search from "./components/common/SearchBar";
 import PopularSearches from "./components/core/PopularSearches";
 import { Routes, Route } from "react-router-dom";
+import MainHomePage from "./pages/MainHomePage";
+import B2B from './pages/B2B';
 
 const App = () => {
   return (
     <div className="w-screen">
       <Navbar />
-      <Search></Search>
-      {/* <Carousal /> */}
-      <HeroHome />
-      <MainCategory />
-      <Service></Service>
-
-      <PopularSearches></PopularSearches>
-      <SpeedInsights />
-      <Analytics />
       <Routes>
-        <Route path="/hotel" element={<Hotel />} />
+        <Route path="/" element={<MainHomePage/>}></Route>
+        <Route path="/b2b" element={<B2B/>}></Route>
       </Routes>
     </div>
   );

@@ -10,7 +10,7 @@ import RecentActivites from '../components/core/RecentActivites'
 const MainHomePage = () => {
   return (
     <React.Fragment>
-        <Navbar/>
+        
         <HeroHome/>
         <FeatureCard/>
         <FeaturedServices/>
