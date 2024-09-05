@@ -6,6 +6,7 @@ import {
   FaRegHeart,
   FaCommentAlt,
 } from "react-icons/fa";
+import Carousal from "../../pages/Accomdation";
 
 import { Hotel } from "../../Data/Hotel";
 
@@ -25,9 +26,8 @@ const HotelListing = () => {
   } = Hotel;
 
   return (
-
-
-
+    <>
+      <Carousal />
       <div className=" flex lg:flex-row flex-col bg-white shadow-lg gap-2 py-2 items-center px-2 mx-auto w-full rounded-lg overflow-hidden">
         <div className="flex  items-center relative w-[74%] h-full py-6 gap-4 px-4 border-gray-500 border rounded-lg">
           <div className="w-[30%] ">
@@ -40,14 +40,18 @@ const HotelListing = () => {
           <div className="w-2/3 ">
             <div className="flex justify-between items-start ">
               <h2 className="text-xl font-bold">{name}</h2>
-              <FaRegHeart size={34} className="text-black absolute top-2 right-4  " />
+              <FaRegHeart
+                size={34}
+                className="text-black absolute top-2 right-4  "
+              />
             </div>
             <div className="flex gap-2 items-center my-1">
               {[...Array(5)].map((_, i) => (
                 <FaStar
                   key={i}
-                  className={`w-4 h-4 ${i < Math.floor(rating) ? "text-yellow-400" : "text-gray-300"
-                    }`}
+                  className={`w-4 h-4 ${
+                    i < Math.floor(rating) ? "text-yellow-400" : "text-gray-300"
+                  }`}
                 />
               ))}
               <span className=" text-sm text-gray-600">
@@ -97,8 +101,7 @@ const HotelListing = () => {
           </div>
         </div>
 
-
-{/* sidebar section */}
+        {/* sidebar section */}
         <div className="sidebar w-[95%]  md:w-[24%] flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 ">
           <h1 className="flex gap-1 font-semibold">
             Get the list of top <p className="text-blue-700">Banquet Halls</p>
@@ -137,10 +140,9 @@ const HotelListing = () => {
             </button>
           </form>
         </div>
-
       </div>
-     
-      
+    </>
+
     // </div>
   );
 };

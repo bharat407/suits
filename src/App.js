@@ -8,23 +8,27 @@ import MainCategory from "./components/core/MainCategory";
 import Hotel from "./components/core/Hotel";
 import HeroHome from "./components/core/HeroHome";
 
-import Service from "./components/core/Service"
-import Search from "./components/common/SearchBar"
+import Service from "./components/core/Service";
+import Search from "./components/common/SearchBar";
 import PopularSearches from "./components/core/PopularSearches";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="w-screen">
       <Navbar />
-    <Search></Search>
-      <Carousal />
-      <Service></Service>
-      <HeroHome/>
+      <Search></Search>
+      {/* <Carousal /> */}
+      <HeroHome />
       <MainCategory />
-      <Hotel />
-      <SpeedInsights />
+      <Service></Service>
+
       <PopularSearches></PopularSearches>
+      <SpeedInsights />
       <Analytics />
+      <Routes>
+        <Route path="/hotel" element={<Hotel />} />
+      </Routes>
     </div>
   );
 };

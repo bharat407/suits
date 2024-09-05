@@ -1,21 +1,30 @@
-import React from 'react'
-import skincare from "../../assets/skin care.jpg"
+import React from "react";
 import Slider from "react-slick";
 import { FaGreaterThan } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CategoryCard = ({source, text,desc}) => {
+const CategoryCard = ({ source, text, desc }) => {
   return (
-    <div className='rounded-lg flex  flex-col relative bg-purple-300 basis-[21%] items-center overflow-hidden justify-center'>
-      <p className='text-left absolute left-2 top-2  text-lg font-semibold'>{text}</p>
-      <p className='text-base text-slate-500 absolute top-8 left-2 w-1/3'>{desc}</p>
-      <img src={source} width={180} className=' absolute right-[-25%]  bottom-[0%] hover:scale-[1.25]' alt="image" />
-      <button className='absolute bg-purple-500 px-1 py-1 rounded-md left-0 bottom-8 ml-1 hover:grow'><FaGreaterThan></FaGreaterThan></button>
+    <div className="rounded-lg flex  flex-col relative bg-purple-300 basis-[21%] items-center overflow-hidden justify-center">
+      <p className="text-left absolute left-2 top-2  text-lg font-semibold">
+        {text}
+      </p>
+      <p className="text-base text-slate-500 absolute top-8 left-2 w-1/3">
+        {desc}
+      </p>
+      <img
+        alt="imag"
+        src={source}
+        width={180}
+        className=" absolute right-[-25%]  bottom-[0%] hover:scale-[1.25]"
+      />
+      <button className="absolute bg-purple-500 px-1 py-1 rounded-md left-0 bottom-8 ml-1 hover:grow">
+        <FaGreaterThan></FaGreaterThan>
+      </button>
     </div>
-  )
-}
-
+  );
+};
 
 const Carousel = () => {
   const settings = {
@@ -44,7 +53,7 @@ const Carousel = () => {
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-            className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-64 object-cover rounded-lg"
             />
           </div>
         ))}
@@ -53,21 +62,37 @@ const Carousel = () => {
   );
 };
 
-
-
 const HeroHome = () => {
   return (
-    <div className='max-w-[1400px] w-full h-[30vh] lg:h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto'>
-
-        <Carousel className=" basis-[40%] "/>
-      <div className='category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%]  w-[98%] h-full'>
-        <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Electritian" desc="Get nearest Vendors" ></CategoryCard>
-        <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Mechanic" desc="Finest Agents"></CategoryCard>
-        <CategoryCard className="" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor"></CategoryCard>
-        <CategoryCard className="" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor" desc="Consult Now"></CategoryCard>
+    <div className="max-w-[1400px] w-full h-[30vh] lg:h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto">
+      <Carousel className=" basis-[40%] " />
+      <div className="category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%]  w-[98%] h-full">
+        <CategoryCard
+          className=""
+          source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
+          text="Electritian"
+          desc="Get nearest Vendors"
+        ></CategoryCard>
+        <CategoryCard
+          className=""
+          source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
+          text="Mechanic"
+          desc="Finest Agents"
+        ></CategoryCard>
+        <CategoryCard
+          className=""
+          source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
+          text="Doctor"
+        ></CategoryCard>
+        <CategoryCard
+          className=""
+          source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
+          text="Doctor"
+          desc="Consult Now"
+        ></CategoryCard>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroHome
+export default HeroHome;
