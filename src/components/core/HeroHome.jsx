@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CategoryCard = ({ source, text, desc }) => {
   return (
-    <div className="rounded-lg flex  flex-col relative bg-purple-300 basis-[21%] items-center overflow-hidden justify-center">
+    <div className="rounded-lg flex  flex-col relative bg-purple-300 basis-[20%] items-center overflow-hidden justify-center">
       <p className="text-left absolute left-2 top-2  text-lg font-semibold">
         {text}
       </p>

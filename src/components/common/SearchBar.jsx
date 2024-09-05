@@ -70,7 +70,7 @@ const SearchBar = () => {
             <input
               type="text"
               placeholder="Mumbai"
-              className="text-xl placeholder:text-black placeholder:text-xl bg-[#EEEEEE] w-full py-3"
+              className="text-xl placeholder:text-black placeholder:text-xl bg-[#EEEEEE] w-full rounded-xl py-3"
             />
           </span>
           <div className="border border-black w-2/3 rounded-lg gap-2 flex items-center">
