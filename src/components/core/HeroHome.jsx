@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CategoryCard = ({source, text,desc}) => {
   return (
-    <div className='rounded-lg flex  flex-col relative bg-purple-300 basis-[15%] items-center overflow-hidden justify-center'>
+    <div className='rounded-lg flex  flex-col relative bg-purple-300 basis-[21%] items-center overflow-hidden justify-center'>
       <p className='text-left absolute left-2 top-2  text-lg font-semibold'>{text}</p>
       <p className='text-base text-slate-500 absolute top-8 left-2 w-1/3'>{desc}</p>
       <img src={source} width={180} className=' absolute right-[-25%]  bottom-[0%] hover:scale-[1.25]' alt="image" />
@@ -15,6 +15,7 @@ const CategoryCard = ({source, text,desc}) => {
     </div>
   )
 }
+
 
 const Carousel = () => {
   const settings = {
@@ -25,8 +26,7 @@ const Carousel = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    dots:true,
-    
+    dots: true,
   };
 
   const images = [
@@ -37,14 +37,14 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="md:w-1/2 w-full  lg:mx-0 mx-4 ">
-      <Slider {...settings} >
+    <div className="w-full ml-[30vh] mt-[7vh] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto my-4">
+      <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index}>
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              className="w-[full] object-cover h-full rounded-lg text-black object-center"
+            className="w-full h-64 object-cover rounded-lg"
             />
           </div>
         ))}
@@ -57,10 +57,10 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className='max-w-[1400px] w-full h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto'>
+    <div className='max-w-[1400px] w-full h-[30vh] lg:h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto'>
 
         <Carousel className=" basis-[40%] "/>
-      <div className='category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%] w-[98%] h-full'>
+      <div className='category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%]  w-[98%] h-full'>
         <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Electritian" desc="Get nearest Vendors" ></CategoryCard>
         <CategoryCard className="" source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png " text="Mechanic" desc="Finest Agents"></CategoryCard>
         <CategoryCard className="" source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png " text="Doctor"></CategoryCard>
