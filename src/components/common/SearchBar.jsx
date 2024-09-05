@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
-import { FaSearch, FaMicrophone } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
   const contentData = [
