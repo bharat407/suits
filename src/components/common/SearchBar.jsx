@@ -85,7 +85,7 @@ const SearchBar = () => {
               alt="Microphone"
               onClick={handleSpeak}
               src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/jdvoice_mic.gif"
-              className="h-[5vh] cursor-pointer"
+              className="h-[2.5vh] md:h-[5vh] cursor-pointer"
             />
             <button className="bg-[#fe610c] hover:bg-[#FF7D18] px-1 flex justify-center items-center py-3 mx-1 rounded-md">
               <FaSearch size={18} className="text-white mx-2" />
