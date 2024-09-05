@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CategoryCard = ({ source, text, desc }) => {
   return (
-    <div className="rounded-lg flex  flex-col relative bg-purple-300 basis-[20%] items-center overflow-hidden justify-center">
-      <p className="text-left absolute left-2 top-2  text-lg font-semibold">
+    <div className="rounded-lg cursor-pointer flex   flex-col relative bg-purple-300 w-[10vw] items-center overflow-hidden justify-center">
+      <p className="text-left absolute hover:scale-[1.12]  left-2 top-2  text-lg font-semibold">
         {text}
       </p>
       <p className="text-base text-slate-500 absolute top-8 left-2 w-1/3">
@@ -17,7 +17,7 @@ const CategoryCard = ({ source, text, desc }) => {
         alt="imag"
         src={source}
         width={180}
-        className=" absolute right-[-25%]  bottom-[0%] hover:scale-[1.25]"
+        className=" absolute right-[-25%] bottom-[0%]"
       />
       <button className="absolute bg-purple-500 px-1 py-1 rounded-md left-0 bottom-8 ml-1 hover:grow">
         <FaGreaterThan></FaGreaterThan>
@@ -39,14 +39,14 @@ const Carousel = () => {
   };
 
   const images = [
-    "https://images.jdmagicbox.com/bangalore/n8/080pxx80.xx80.170420183157.q2n8/cbnr/f1eb937d8c8f676d841feada5ce42ec3.jpg",
-    "https://images.jdmagicbox.com/bangalore/n8/080pxx80.xx80.231127172703.a6n8/cbnr/74fce72925ccf71ca14f584cdfdd41e5.jpg",
-    "https://images.jdmagicbox.com/bangalore/l3/080pxx80.xx80.121110191448.p3l3/cbnr/26cd8fde3eb30d839bbf101196222d4b.jpg",
-    "https://images.jdmagicbox.com/bangalore/m3/080pxx80.xx80.190821143520.h4m3/cbnr/4871777756ef945b07b6c2545cfabef6.jpg",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
   ];
 
   return (
-    <div className="w-full ml-[30vh] mt-[7vh] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto my-4">
+    <div className="w-full md:ml-[30vh] mt-[7vh] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto my-4">
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index}>
@@ -64,7 +64,7 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className="max-w-[1400px] w-full h-[30vh] lg:h-[40vh] my-2 flex md:flex-row flex-col gap-4 justify-center items-center mx-auto">
+    <div className="w-[90vw] overflow-hidden ml-[2vh] h-[30vh] lg:h-[40vh] my-2 flex-col flex lg:flex-row gap-4 justify-center items-center mx-auto">
       <Carousel className=" basis-[40%] " />
       <div className="category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%]  w-[98%] h-full">
         <CategoryCard

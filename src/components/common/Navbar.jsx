@@ -19,13 +19,9 @@ const Header = () => {
             href="/"
             aria-label="Justdial"
             title="Justdial"
-            className="flex items-center"
+            className="flex items-center text-4xl text-[#d10001]"
           >
-            <img
-              src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd/jdlogosvg.svg"
-              alt="Justdial Logo"
-              className="h-8 w-auto"
-            />
+           NITAR
           </a>
         </div>
 
