@@ -1,8 +1,7 @@
 import React from 'react'
 import HeroHome from '../components/core/HeroHome'
-import Navbar from '../components/common/Navbar'
 import FeatureCard from '../components/core/FeatureCard'
-import FeaturedServices from '../components/core/FeaturedServices'
+import FeaturedServices from '../components/core/MainCategory'
 import PopularSearches from '../components/core/PopularSearches'
 import RecentActivites from '../components/core/RecentActivites'
 
@@ -10,7 +9,6 @@ import RecentActivites from '../components/core/RecentActivites'
 const MainHomePage = () => {
   return (
     <React.Fragment>
-        
         <HeroHome/>
         <FeatureCard/>
         <FeaturedServices/>
