@@ -48,7 +48,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="flex flex-col mx-auto w-full gap-2 my-2 px-6 max-w-[1400px]">
+      <div className="flex flex-col md:mx-auto w-full gap-2 my-2 px-4 md:px-6 max-w-[1400px]">
         <div className="relative mt-3">
           <h2 className="text-3xl font-semibold">
             Search across{" "}
@@ -64,20 +64,20 @@ const SearchBar = () => {
             </span>
           </h2>
         </div>
-        <div className="w-2/3 flex gap-4 mt-1">
-          <span className="border border-black bg-[#EEEEEE] w-1/3 rounded-xl gap-2 flex items-center">
+        <div className="md:w-2/3 flex gap-4 mt-1">
+          <span className="border border-black bg-[#EEEEEE] w-1/3 rounded-xl gap-2 md:flex hidden items-center">
             <CiLocationOn className="text-2xl ml-2" />
             <input
               type="text"
               placeholder="Mumbai"
-              className="text-xl placeholder:text-black placeholder:text-xl bg-[#EEEEEE] w-full rounded-xl py-3"
+              className="text-xl placeholder:text-gray-500 placeholder:text-xl outline-none bg-[#EEEEEE] w-full rounded-xl py-3"
             />
           </span>
-          <div className="border border-black w-2/3 rounded-lg gap-2 flex items-center">
+          <div className="border border-black md:w-2/3 w-full rounded-lg gap-2 flex items-center">
             <input
               type="text"
               placeholder="Search In Mumbai"
-              className="text-xl px-4 outline-none placeholder:text-black placeholder:text-xl bg-transparent w-full py-3"
+              className="text-xl px-4 outline-none placeholder:text-gray-500 placeholder:text-xl bg-transparent w-full py-3"
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
             />

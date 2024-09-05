@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CategoryCard = ({ source, text, desc }) => {
   return (
-    <div className="rounded-lg cursor-pointer flex   flex-col relative bg-purple-300 w-[10vw] items-center overflow-hidden justify-center">
+    <div className="rounded-lg cursor-pointer flex  overflow-hidden flex-col relative bg-purple-300 w-[24%] md:w-[30%] lg:w-[18.75%]  items-center  justify-center">
       <p className="text-left absolute hover:scale-[1.12]  left-2 top-2  text-lg font-semibold">
         {text}
       </p>
@@ -46,7 +46,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="w-full md:ml-[30vh] mt-[7vh] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto my-4">
+    <div className="py-1 w-[98%] lg:w-2/3 xl:w-1/2 rounded-md mx-auto my-4">
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index}>
@@ -64,9 +64,9 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className="w-[90vw] overflow-hidden ml-[2vh] h-[30vh] lg:h-[40vh] my-2 flex-col flex lg:flex-row gap-4 justify-center items-center mx-auto">
-      <Carousel className=" basis-[40%] " />
-      <div className="category-card rounded-lg flex gap-2 md:w-[60%] min-w-[60%]  w-[98%] h-full">
+    <div className="w-full overflow-hidden  h-full my-2  flex flex-col lg:flex-row gap-2 justify-evenly items-center ">
+      <Carousel className=" " />
+      <div className="category-card rounded-lg mt-2 lg:mt-0 flex gap-2 lg:w-[60%] min-w-[60%]  w-[98%] h-[12rem] md:h-[16.25rem]">
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
