@@ -64,7 +64,7 @@ const Carousel = () => {
 
 const HeroHome = () => {
   return (
-    <div className="w-full overflow-hidden  h-full my-2  flex flex-col lg:flex-row gap-2 justify-evenly items-center ">
+    <div className="w-full overflow-hidden  mx-3 h-full my-2  flex flex-col lg:flex-row gap-2 justify-evenly items-center ">
       <Carousel className=" " />
       <div className="category-card rounded-lg mt-2 lg:mt-0 flex gap-2 lg:w-[60%] min-w-[60%]  w-[98%] h-[12rem] md:h-[16.25rem]">
         <CategoryCard
