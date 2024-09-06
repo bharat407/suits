@@ -1,7 +1,7 @@
 // src/components/WeddingRequisites.js
 import React from "react";
 import { Data } from "../../Data/Service";
-import Section from "../section/section";
+import Section from "./section";
 
 const WeddingRequisites = () => {
   return <Section heading="Repairs & Service" data={Data} />;

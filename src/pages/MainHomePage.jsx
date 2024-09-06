@@ -1,7 +1,7 @@
 import React from "react";
 import HeroHome from "../components/core/HeroHome";
-import FeatureCard from "../components/core/FeatureCard";
-import FeaturedServices from "../components/core/MainCategory";
+import FeatureCard from "../components/core/featureSection/FeatureCard";
+import FeaturedServices from "../components/section/MainCategory";
 import PopularSearches from "../components/core/PopularSearches";
 import RecentActivity from "../components/core/RecentActivity";
 import SearchBar from "../components/common/SearchBar";
@@ -14,7 +14,7 @@ const MainHomePage = () => {
       <FeatureCard />
       <FeaturedServices />
       <PopularSearches />
-      <RecentActivity/>
+      <RecentActivity />
     </div>
   );
 };
