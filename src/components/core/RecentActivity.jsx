@@ -35,17 +35,8 @@ const pgData = [
 
 const PGCard = ({ pg }) => {
   return (
-<<<<<<< HEAD
-    <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4">
-      <img
-        className="w-full h-48 object-cover"
-        src={pg.image}
-        alt={pg.name}
-      />
-=======
     <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-2 mx-auto">
       <img className="w-full h-48 object-cover" src={pg.image} alt={pg.name} />
->>>>>>> 1e416d2115e4d43d482905c65bcba532900ccfdc
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-900">{pg.name}</h3>
         <p className="text-sm text-gray-600">{pg.location}</p>
@@ -71,7 +62,7 @@ const PGCard = ({ pg }) => {
 
 const RecentActivity = () => {
   return (
-    <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="container mx-auto px-2 py-2 grid grid-cols-1 md:grid-cols-3 gap-4">
       {pgData.map((pg, index) => (
         <PGCard key={index} pg={pg} />
       ))}
