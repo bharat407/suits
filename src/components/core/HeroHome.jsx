@@ -14,12 +14,12 @@ const CategoryCard = ({ source, text, desc }) => {
         {desc}
       </p>
       <img
-        alt="imag"
+        alt="image"
         src={source}
         width={180}
         className=" absolute right-[-25%] bottom-[0%]"
       />
-      <button className="absolute bg-purple-500 px-1 py-1 rounded-md left-0 bottom-8 ml-1 hover:grow">
+      <button className="absolute bg-blue-600 px-1 py-1 rounded-md text-sm left-0 bottom-8 ml-1 hover:grow">
         <FaGreaterThan></FaGreaterThan>
       </button>
     </div>
@@ -70,19 +70,21 @@ const HeroHome = () => {
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
-          text="Electritian"
+          text="B2B"
           desc="Get nearest Vendors"
         ></CategoryCard>
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
-          text="Mechanic"
+          text="Repair"
           desc="Finest Agents"
+          
         ></CategoryCard>
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
-          text="Doctor"
+          text="Real Estate"
+          desc="Finest Agents"
         ></CategoryCard>
         <CategoryCard
           className=""

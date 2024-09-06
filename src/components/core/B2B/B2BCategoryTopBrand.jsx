@@ -3,37 +3,37 @@ import React from "react";
 const brandData = [
   {
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…ritannia-cakes-06-10-2020-092-210786957-6xl4q.png",
+      "https://media.britannia.co.in/Good_Day_Chocochip_ce1e99ab80.jpg",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Cake_Britannia.jpg",
     brandName: "BRITANNIA",
   },
   {
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…nkies-cake-rich-butter-275-gm-160114717-uz0t6.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvr43KfhvThlXSnSYKoaqmDXeBdPQCCQ2j8A&s",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Cake_Winkies.jpg",
     brandName: "Winkies",
   },
   {
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…-cup-cake-chocolate-170-gm-160114831-1801xo0e.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREuEwpfmwoqXuB5jXEwRjP5D8fzY-pXt--v0eo1pBbTSMND7_6P1qrhMctUBTwYT8N4NA&usqp=CAU",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Cake_Elite.jpg",
     brandName: "Elite",
   },
   {
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…t-breads-cakes-28-12-2020-013-219955969-q33t9.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP68Dzw_XvGXW6SblTD0Hh2IGgb4pAVF1iWw&s",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Just_Breads_Cake.jpg",
     brandName: "Just Breads",
   },
   {
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_main/cremfil-ultim-376361168-wndkw.jpg",
+      "https://www.puratos.com/content/dam/corporate/images/press/4953_ct_web_imagegenera-belcolade-1280x1280.jpeg/jcr:content/renditions/cq5dam.web.800.800.jpeg",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Puratos_Cake.jpg",
     brandName: "Puratos",
   },
   {
     image:
-      "	https://images.jdmagicbox.com/quickquotes/images_m…range-cup-cake-28-01-2021-038-220051984-23r1e.png",
+      "	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQOzsTGjMUANEyGUPt90mzSRxKpJzaAygUQ&s",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/RAJA_Cake.jpg",
     brandName: "Raja",
   },
@@ -41,16 +41,16 @@ const brandData = [
 
 const BrandCard = ({ brand }) => {
   return (
-    <div className="flex-shrink-0 w-48 bg-white shadow-lg rounded-lg overflow-hidden m-2">
+    <div className="flex-shrink-0 w-48 bg-white shadow-lg rounded-lg overflow-hidden my-2">
       <img
-        className="w-full h-32 object-cover"
+        className="w-full h-[70%] object-cover"
         src={brand.image}
         alt={brand.brandName}
       />
-      <div className="p-4 flex justify-center">
+      <div className=" flex h-[30%] justify-center items-center">
         <img
-          className="w-20 h-20 object-contain"
-          src={brand.logo}
+          className="object-cover object-center"
+          src={brand.logo} width={90}
           alt={`${brand.brandName} Logo`}
         />
       </div>
@@ -60,19 +60,19 @@ const BrandCard = ({ brand }) => {
 
 const B2BCategoryTopBrand = () => {
   return (
-    <div className="container mx-auto p-8">
-      <h2 className="text-xl font-bold mb-4">
-        Top Brands Based On Your Search
-      </h2>
-      <div className="flex overflow-x-scroll scrollbar-hide">
-        {brandData.map((brand, index) => (
-          <BrandCard key={index} brand={brand} />
-        ))}
-      </div>
-      <div className="text-right mt-4">
+    <div className="container flex flex-col mx-auto p-8">
+      <div className="flex items-center justify-between my-2 ">
+        <h2 className="text-xl font-bold ">
+          Top Brands Based On Your Search
+        </h2>
         <a href="" className="text-blue-600 font-semibold">
           View All
         </a>
+      </div>
+      <div className="flex gap-4">
+        {brandData.map((brand, index) => (
+          <BrandCard key={index} brand={brand} />
+        ))}
       </div>
     </div>
   );
