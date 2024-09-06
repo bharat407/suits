@@ -21,7 +21,7 @@ const Header = () => {
             title="Justdial"
             className="flex items-center text-4xl text-[#d10001]"
           >
-           NITAR
+            NITAR
           </a>
         </div>
 

@@ -4,7 +4,8 @@ const pgData = [
   {
     name: "Nap Park Womens Pg",
     location: "Hanumantha Nagar - Bangalore",
-    image: "https://images.jdmagicbox.com/v2/comp/bangalore/i9…ing-guest-accommodations-for-women-680339w2ua.jpg", 
+    image:
+      "https://images.jdmagicbox.com/v2/comp/bangalore/i9…ing-guest-accommodations-for-women-680339w2ua.jpg",
     reviewer: "kusuma",
     review:
       "Nap Park Womens Pg is excellently managed, budget-friendly, and well-maintained. I had a great experience staying there, feels homely.",
@@ -13,7 +14,8 @@ const pgData = [
   {
     name: "Chegus Perennial Pg",
     location: "Basavanagudi - Bangalore",
-    image: "	https://images.jdmagicbox.com/v2/comp/bangalore/a2…galore-paying-guest-accommodations-riznnhrcn4.jpg",
+    image:
+      "	https://images.jdmagicbox.com/v2/comp/bangalore/a2…galore-paying-guest-accommodations-riznnhrcn4.jpg",
     reviewer: "Altafulla Hurkadli",
     review:
       "Chegus Perennial Pg offers clean, comfortable rooms for both men and women. The rental stay was excellent, with well-maintained facilities and a peaceful environment.",
@@ -22,7 +24,8 @@ const pgData = [
   {
     name: "Millennial Sapphire",
     location: "Bannerghatta Road - Bangalore",
-    image: "https://images.jdmagicbox.com/v2/comp/bangalore/b3…ing-guest-accommodations-for-women-88gzj8846o.jpg",
+    image:
+      "https://images.jdmagicbox.com/v2/comp/bangalore/b3…ing-guest-accommodations-for-women-88gzj8846o.jpg",
     reviewer: "Kama Raju",
     review:
       "Millennial Sapphire is budget-friendly, with spacious rooms and healthy food options. Excellent choice for a comfortable stay!",
@@ -33,18 +36,14 @@ const pgData = [
 const PGCard = ({ pg }) => {
   return (
     <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-2 mx-auto">
-      <img
-        className="w-full h-48 object-cover"
-        src={pg.image}
-        alt={pg.name}
-      />
+      <img className="w-full h-48 object-cover" src={pg.image} alt={pg.name} />
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-900">{pg.name}</h3>
         <p className="text-sm text-gray-600">{pg.location}</p>
         <div className="flex items-center mt-2">
           <img
             className="w-8 h-8 rounded-full"
-            src="path_to_profile_picture" 
+            src="path_to_profile_picture"
             alt={pg.reviewer}
           />
           <p className="ml-3 text-gray-700">{pg.reviewer}</p>
@@ -72,5 +71,3 @@ const RecentActivity = () => {
 };
 
 export default RecentActivity;
-
-
