@@ -4,7 +4,6 @@ import Card from "../components/core/featureSection/FeatureCard";
 import FeaturedServices from "../components/section/MainCategory";
 import PopularSearches from "../components/core/PopularSearches";
 import RecentActivity from "../components/core/RecentActivity";
-import SearchBar from "../components/common/SearchBar";
 
 const MainHomePage = () => {
   return (

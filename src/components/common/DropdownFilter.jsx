@@ -46,7 +46,7 @@ const DropdownFilter = ({ text }) => {
   return (
     <div className="relative">
       <div
-        className="px-2 py-1 mt-2 font-semibold items-center gap-2 bg-slate-200 relative border flex w-[7rem] ml-2 justify-center rounded-lg border-gray-400 cursor-pointer"
+        className="px-2 py-1 mt-2 font-semibold items-center gap-2 bg-slate-200 relative border flex min-w-[7rem] ml-2 justify-center rounded-lg border-gray-400 cursor-pointer"
         onClick={handleDropdown}
       >
         <h2>{text}</h2>
