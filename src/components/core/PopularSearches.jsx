@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 const PopularSearches = () => {
   const navigate = useNavigate();
-  
+
   const handleLeave = (e) => {
     e.preventDefault();
     navigate("/quora");
