@@ -8,17 +8,19 @@ import Repair from "./components/core/featureSection/RepairServices";
 import Quora from "./components/core/QuoraForm";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import InnerHome from "./components/core/innerSection/InnerHome";
 
 const App = () => {
   return (
     <div className="w-screen">
       <Navbar />
       <Routes>
-        <Route path="/" element={<MainHomePage />}></Route>
+        <Route path="/home" element={<MainHomePage />}></Route>
         <Route path="/register" element={<B2B />}></Route>
         <Route path="/real" element={<Real />}></Route>
         <Route path="/repair" element={<Repair />}></Route>
         <Route path="/quora" element={<Quora />}></Route>
+        <Route path="/" element={<InnerHome />}></Route>
       </Routes>
       <Analytics />
       <SpeedInsights />
