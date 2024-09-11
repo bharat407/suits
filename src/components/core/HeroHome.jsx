@@ -2,11 +2,16 @@ import React from "react";
 import Slider from "react-slick";
 import { FaGreaterThan } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
+import { useNavigate } from "react-router-dom";
+
 import "slick-carousel/slick/slick-theme.css";
 
-const CategoryCard = ({ source, text, desc }) => {
+const CategoryCard = ({ source, text, desc, onclick }) => {
   return (
-    <div className="rounded-lg cursor-pointer flex  overflow-hidden flex-col relative bg-purple-300 w-[24%] md:w-[30%] lg:w-[18.75%]  items-center  justify-center">
+    <div
+      className="rounded-lg cursor-pointer flex  overflow-hidden flex-col relative bg-purple-300 w-[24%] md:w-[30%] lg:w-[18.75%]  items-center  justify-center"
+      onClick={onclick} // Added onClick here
+    >
       <p className="text-left absolute hover:scale-[1.12]  left-2 top-2  text-lg font-semibold">
         {text}
       </p>
@@ -20,7 +25,7 @@ const CategoryCard = ({ source, text, desc }) => {
         className=" absolute right-[-25%] bottom-[0%]"
       />
       <button className="absolute bg-blue-600 px-1 py-1 rounded-md text-sm left-0 bottom-8 ml-1 hover:grow">
-        <FaGreaterThan></FaGreaterThan>
+        <FaGreaterThan />
       </button>
     </div>
   );
@@ -63,6 +68,23 @@ const Carousel = () => {
 };
 
 const HeroHome = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (e) => {
+    e.preventDefault();
+    navigate("/register");
+  };
+
+  const handlereal = (e) => {
+    e.preventDefault();
+    navigate("/real");
+  };
+
+  const handlerepair = (e) => {
+    e.preventDefault();
+    navigate("/repair");
+  };
+
   return (
     <div className="w-full overflow-hidden  mx-3 h-full my-2  flex flex-col lg:flex-row gap-2 justify-evenly items-center ">
       <Carousel className=" " />
@@ -72,26 +94,28 @@ const HeroHome = () => {
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
           text="B2B"
           desc="Get nearest Vendors"
-        ></CategoryCard>
+          onclick={handleNavigate} // Pass the handler here
+        />
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
           text="Repair"
           desc="Finest Agents"
-          
-        ></CategoryCard>
+          onclick={handlerepair}
+        />
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
           text="Real Estate"
           desc="Finest Agents"
-        ></CategoryCard>
+          onclick={handlereal}
+        />
         <CategoryCard
           className=""
           source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
           text="Doctor"
           desc="Consult Now"
-        ></CategoryCard>
+        />
       </div>
     </div>
   );

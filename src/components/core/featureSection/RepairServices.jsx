@@ -5,7 +5,7 @@ import restaurant from "../../../assets/FeatureIcons/restaurant.svg";
 const ServiceCard = ({ imageSrc, Service }) => {
   return (
     <div className="flex gap-3 ">
-      <img src="" alt="service icon" />
+      <img src={restaurant} alt="service icon" />
       <h3>{Service}</h3>
     </div>
   );

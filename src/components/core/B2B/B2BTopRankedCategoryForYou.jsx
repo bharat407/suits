@@ -4,7 +4,7 @@ const categories = [
   {
     name: "Cream Roll",
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…ad-and-bakery-19-03-2021-9400-225791235-mp6vt.jpg",
+      "https://images.jdmagicbox.com/quickquotes/images_main/cks-bakery-bread-and-bakery-19-03-2021-9400-225791235-mp6vt.jpg",
   },
   {
     name: "Coco Chip",
@@ -13,7 +13,7 @@ const categories = [
   {
     name: "Cake Toppers",
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…al-decorations-11-08-2021-783-240037580-b4xu1.jpg",
+      "https://images.jdmagicbox.com/quickquotes/images_main/party-propz-seasonal-decorations-11-08-2021-783-240037580-b4xu1.jpg",
   },
   {
     name: "Buns",

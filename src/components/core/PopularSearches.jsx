@@ -1,6 +1,13 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const PopularSearches = () => {
+  const navigate = useNavigate();
+  
+  const handleLeave = (e) => {
+    e.preventDefault();
+    navigate("/quora");
+  };
+
   const services = [
     {
       title: "Packers & Movers",
@@ -40,7 +47,10 @@ const PopularSearches = () => {
             </div>
             <div className="p-4 text-center">
               <h3 className="text-lg font-medium">{service.title}</h3>
-              <button className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+              <button
+                onClick={handleLeave}
+                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+              >
                 Enquire Now
               </button>
             </div>
