@@ -5,9 +5,10 @@ import SideBarform from "./SideBarform";
 import BrandDetails from "./BrandDetails";
 import BrandDesc from "./BrandDesc";
 
+
 const InnerHome = () => {
   return (
-    <div>
+    <div className="w-full">
       <ImageGallery />
       <SidebarContact />
       <SideBarform />
