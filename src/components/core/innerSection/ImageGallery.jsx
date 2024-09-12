@@ -17,7 +17,7 @@ const ImageGallery = () => {
           <img 
             src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-lt-nagarbhavi-bangalore-digital-signature-services-pbsqvq0ba5.jpg?w=1920&q=75" 
             alt="Building" 
-            className="w-full h-auto object-cover rounded"
+            className="w-full h-[152.9px] object-cover rounded"
           />
         </div>
 
@@ -41,14 +41,14 @@ const ImageGallery = () => {
               <img 
                 src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-ltd-rajajinagar-bangalore-digital-signature-services-yk1i11t2vs.jpg?w=1920&q=75" 
                 alt="Small Image 3" 
-                className="w-1/2 h-auto object-cover rounded"
+                className="w-auto h-[85.99px] object-cover rounded"
               />
             </div>
 
             <img 
                 src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-lt-nagarbhavi-bangalore-digital-signature-services-s5oi8i6pqm.jpg?w=1920&q=75" 
                 alt="Small Image 4" 
-                className="w-1/2 h-auto object-cover rounded"
+                className="w-1/2 h-[85.99px] object-cover rounded"
               />
           </div>
         </div>
