@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { FcAdvertising } from "react-icons/fc";
 import { BsGraphUpArrow } from "react-icons/bs";
-import { MdNotificationsActive } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
@@ -11,7 +10,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className=" top-0 left-0 w-full z-50 bg-white shadow-md py-4">
+    <header className=" top-0 left-0 w-full overflow-hidden  z-50 bg-white shadow-md py-4">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
         {/* Left Section: Logo */}
         <div className="flex ml-5 items-center">
@@ -28,7 +27,7 @@ const Header = () => {
         {/* Right Section: Navigation */}
         <div className="hidden md:flex items-center">
           {/* Language Dropdown */}
-          <div className="relative z-[999] group">
+          <div className="relative group">
             <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
               <img
                 src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
@@ -37,7 +36,9 @@ const Header = () => {
               <span>EN</span>
               <RiArrowDropDownLine size={28} />
             </button>
-            <div className="absolute left-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+            {/* Dropdown Menu */}
+            <div className="absolute left-0 mt-1 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-500">
               {[
                 "English - EN",
                 "हिंदी - HI",
@@ -59,15 +60,10 @@ const Header = () => {
           </div>
 
           {/* Navigation Links */}
-          {[
-            "We are Hiring",
-            "Investor Relations",
-            "Advertise",
-            "Free Listing",
-          ].map((text, index) => (
+          {["Investor Relations"].map((text, index) => (
             <a
               key={index}
-              className="text-black hover:bg-[#EBEBEB] gap-2 cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
+              className="text-black hover:bg-[#EBEBEB] gap-2 mr-[3vh] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
             >
               {index === 2 ? (
                 <FcAdvertising />
@@ -77,15 +73,9 @@ const Header = () => {
               {text}
             </a>
           ))}
-          <a
-            href="#"
-            className="text-black hover:bg-[#EBEBEB] px-3 py-2 mr-2 cursor-pointer hover:rounded-md transition"
-          >
-            <MdNotificationsActive size={22} />
-          </a>
 
           {/* Login Button */}
-          <button className="bg-[#0076d7] text-white mr-8 px-4 py-2 rounded-md hover:bg-[#41A9FF] transition">
+          <button className="bg-[#0076d7] text-white mr-4 px-4 py-2 rounded-md hover:bg-[#41A9FF] transition">
             Login / Sign Up
           </button>
         </div>
