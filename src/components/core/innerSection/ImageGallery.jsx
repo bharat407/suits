@@ -9,7 +9,7 @@ const ImageGallery = () => {
           <img 
             src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-lt-nagarbhavi-bangalore-digital-signature-services-7tlvlj3ao4.jpg?w=1920&q=75" 
             alt="Main Logo" 
-            className="w-full h-auto object-cover rounded"
+            className="w-full h-[152.9px] object-cover rounded"
           />
         </div>
 
