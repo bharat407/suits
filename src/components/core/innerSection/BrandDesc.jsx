@@ -17,15 +17,12 @@ const BrandDesc = () => {
   const recentRatings = [5.0, 4.0, 5.0, 4.5, 5.0, 5.0, 5.0, 4.5, 4.0];
   const [activeTab, setActiveTab] = useState("Overview");
   const tabs = ["Overview", "Quick Info", "Photos", "Key Insights", "Reviews"];
-
-  // Refs for each section
   const overviewRef = useRef(null);
   const quickInfoRef = useRef(null);
   const photosRef = useRef(null);
   const keyInsightsRef = useRef(null);
   const reviewsRef = useRef(null);
 
-  // Scroll to the corresponding section
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     switch (tab) {
@@ -117,10 +114,7 @@ const BrandDesc = () => {
       </section>
 
       {/* Photos Section */}
-      <section
-        ref={photosRef}
-        className="p-6 w-1/2 border-solid border-[1px] "
-      >
+      <section ref={photosRef} className="p-6 w-1/2 border-solid border-[1px] ">
         <h2 className="text-2xl font-semibold mb-4">Photos</h2>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="relative">
@@ -201,10 +195,7 @@ const BrandDesc = () => {
       </section>
 
       {/* Reviews Section */}
-      <section
-        ref={reviewsRef}
-        className="w-1/2 border-solid border-[1px] p-6"
-      >
+      <section ref={reviewsRef} className="w-1/2 border-solid border-[1px] p-6">
         <h2 className="text-2xl font-semibold mb-4">Reviews & Ratings</h2>
 
         <div className="flex items-center mb-4">
