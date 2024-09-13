@@ -47,7 +47,7 @@ const BrandDesc = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-2 md:mx-auto md:w-[70%] w-full ">
       {/* Overview Section */}
       <section ref={overviewRef} className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
@@ -60,11 +60,11 @@ const BrandDesc = () => {
       </section>
       {/* Navbar */}
       <nav className="mb-8">
-        <ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500">
+        <ul className="flex flex-wrap  text-sm font-medium text-center text-gray-500">
           {tabs.map((tab) => (
             <li key={tab} className="mr-2">
               <button
-                className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
+                className={`inline-flex items-center justify-center px-4 py-2 border-b-2 rounded-t-lg ${
                   activeTab === tab
                     ? "text-blue-600 border-blue-600"
                     : "border-transparent hover:text-gray-600 hover:border-gray-300"
@@ -81,7 +81,7 @@ const BrandDesc = () => {
       {/* Quick Info Section */}
       <section
         ref={quickInfoRef}
-        className="flex justify-between p-6 w-1/2 border-solid border-[1px]"
+        className="flex justify-between p-6 border-solid border-[1px]"
       >
         <div className="quick-info">
           <h2 className="text-xl font-semibold mb-4">Quick Information</h2>
@@ -114,7 +114,7 @@ const BrandDesc = () => {
       </section>
 
       {/* Photos Section */}
-      <section ref={photosRef} className="p-6 w-1/2 border-solid border-[1px] ">
+      <section ref={photosRef} className="p-6  border-solid border-[1px] ">
         <h2 className="text-2xl font-semibold mb-4">Photos</h2>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="relative">
@@ -155,7 +155,7 @@ const BrandDesc = () => {
       {/* Key Insights Section */}
       <section
         ref={keyInsightsRef}
-        className="p-6 border-solid border-[1px] w-1/2 "
+        className="p-6 border-solid border-[1px] "
       >
         <h2 className="text-2xl font-semibold mb-4">Key Insights</h2>
 
@@ -195,7 +195,7 @@ const BrandDesc = () => {
       </section>
 
       {/* Reviews Section */}
-      <section ref={reviewsRef} className="w-1/2 border-solid border-[1px] p-6">
+      <section ref={reviewsRef} className=" border-solid border-[1px] p-6">
         <h2 className="text-2xl font-semibold mb-4">Reviews & Ratings</h2>
 
         <div className="flex items-center mb-4">

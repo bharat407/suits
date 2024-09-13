@@ -1,32 +1,38 @@
 import React from 'react'
-import { FaThumbsUp, FaMapMarkerAlt, FaRegBookmark , FaShare , FaPhone, FaCommentAlt, FaWhatsappSquare } from "react-icons/fa";
+import { FaThumbsUp, FaMapMarkerAlt, FaRegBookmark, FaShare, FaPhone, FaCommentAlt, FaWhatsappSquare } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
 
 const BrandDetails = () => {
   return (
-    <div className='max-w-[1400px] relative py-6 w-[98%] rounded-lg flex border border-slate-400'>
-      <div className='px-4 py-2'>
-        <img src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg" className='w-20' alt="" />
-      </div>
-      
-      <div className='flex md:flex-col  mx-2 gap-2'>
-        <div className='flex justify-between items-center text-lg font-semibold  gap-4'>
-          <div className='flex items-center gap-2'>
-            <FaThumbsUp />
-            <h2 className='text-3xl'>Isaral Business Solutions Pvt ltd</h2>
+    <div className='max-w-[1400px] relative py-6 w-[100%] rounded-lg flex border  border-slate-400'>
+
+
+      <div className='flex flex-wrap flex-col  mx-2 gap-2'>
+
+        <div className='flex gap-2'>
+          <div className='px-4 py-2 md:normal ' >
+            <img src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg" className='w-20' alt="" />
           </div>
-          
+          <div className='flex flex-col'>
+            <div className='flex justify-between items-center text-lg font-semibold  gap-4'>
+              <div className='flex items-center gap-2'>
+                <FaThumbsUp />
+                <h2 className='text-3xl'>Isaral Business Solutions Pvt ltd</h2>
+              </div>
+
+            </div>
+            <div className='2ndrow flex items-center gap-2 text-lg'>
+              <span className='bg-green-500 px-2 rounded-md py-1'>
+                <p>4.8</p>
+              </span>
+              <IoMdStar />
+              <p>307 Ratings</p>
+            </div>
+          </div>
         </div>
-        <div className='2ndrow flex items-center gap-2 text-lg'>
-          <span className='bg-green-500 px-2 rounded-md py-1'>
-            <p>4.8</p>
-          </span>
-          <IoMdStar />
-          <p>307 Ratings</p>
-        </div>
-        <div className="flex flex-wrap items-center mt-2 text-sm text-gray-600">
+        <div className="flex  items-center mt-2 text-sm text-gray-600">
           <FaMapMarkerAlt className="w-4 h-4 mr-1" />
           <span className='flex text-lg gap-2'>
             <p>NagarBhavi Bangalore</p> •  <p> 3.67 km</p> • <span className='text-green-500'>Opens at</span> 9:30 Tomorrow • 9 Years in Business
@@ -85,7 +91,7 @@ const BrandDetails = () => {
           </div>
         </div>
       </div>
-      
+
     </div>
   )
 }
