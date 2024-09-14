@@ -47,7 +47,7 @@ const BrandDesc = () => {
   };
 
   return (
-    <div className="container mx-2 md:mx-auto md:w-[70%] w-full ">
+    <div className="container mx md:mx-auto  w-full ">
       {/* Overview Section */}
       <section ref={overviewRef} className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
@@ -119,7 +119,7 @@ const BrandDesc = () => {
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="relative">
             <img
-              src="/api/placeholder/300/200"
+              src="https://images-platform.99static.com//LR3vZ2VswCVdEntk7kCSkfVPviI=/323x1566:991x2233/fit-in/500x500/projects-files/40/4027/402713/f1176a7c-7d6d-4ec0-9609-c6f297905158.png"
               alt="iSaral logo"
               className="w-full h-40 object-cover rounded-lg"
             />
@@ -129,8 +129,8 @@ const BrandDesc = () => {
           </div>
           <div className="relative bg-gray-100 rounded-lg flex items-center justify-center h-40">
             <img
-              src="/api/placeholder/300/200"
-              alt="Justdial logo"
+              src="https://i.ytimg.com/vi/QyhwSYhX09s/maxresdefault.jpg"
+              alt="Company video"
               className="w-full h-full object-cover rounded-lg opacity-50"
             />
             <FaPlay className="absolute text-white" size={48} />

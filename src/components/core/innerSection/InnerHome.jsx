@@ -8,12 +8,16 @@ import BrandDesc from "./BrandDesc";
 
 const InnerHome = () => {
   return (
-    <div className="max-w-[1400px] w-full mx-auto">
-      <ImageGallery />
-      <BrandDetails />
-      <div className="flex flex-col md:flex-row w-full ">
-        <BrandDesc />
-        <div className="flex flex-col w-[full] md:w-[28%]">
+    <div className="max-w-[1400px] w-full mx-auto overflow-hidden">
+      <div className="flex flex-col items-center w-full mx-2 ">
+        <ImageGallery />
+        <BrandDetails />
+      </div>
+      <div className="flex flex-col md:flex-row w-full justify-center my-2 gap-2 ">
+       <div className="w-[65%]">
+          <BrandDesc />
+       </div>
+        <div className="flex flex-col w-[full] ">
           <SidebarContact />
           <SideBarform />
         </div>

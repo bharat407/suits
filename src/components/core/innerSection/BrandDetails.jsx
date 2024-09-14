@@ -6,10 +6,14 @@ import { BsGraphUpArrow } from "react-icons/bs";
 
 const BrandDetails = () => {
   return (
-    <div className='max-w-[1400px] relative py-6 w-[100%] rounded-lg flex border  border-slate-400'>
+    
+
+   
+    <div className='max-w-[1400px] w-[96%] justify-center rounded-lg flex border relative border-slate-400'>
 
 
-      <div className='flex flex-wrap flex-col  mx-2 gap-2'>
+      
+      <div className='flex flex-wrap flex-col p-3  gap-2'>
 
         <div className='flex gap-2'>
           <div className='px-4 py-2 md:normal ' >
@@ -91,7 +95,6 @@ const BrandDetails = () => {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

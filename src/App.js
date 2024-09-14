@@ -12,7 +12,7 @@ import InnerHome from "./components/core/innerSection/InnerHome";
 
 const App = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen max-w-[1400px]">
       <Navbar />
       <Routes>
         <Route path="/home" element={<MainHomePage />}></Route>
