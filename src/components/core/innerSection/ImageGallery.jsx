@@ -25,7 +25,7 @@ const ImageGallery = () => {
           <img
             src="https://img.freepik.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg"
             alt="Small Image 1"
-            className="w-/2 h-full object-cover rounded"
+            className="w-1/2 h-full object-cover rounded"
           />
           <img
             src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-lt-nagarbhavi-bangalore-digital-signature-services-kvrnfg8o77.jpg?w=1920&q=75"
