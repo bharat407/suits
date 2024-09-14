@@ -47,7 +47,7 @@ const BrandDesc = () => {
   };
 
   return (
-    <div className="container mx md:mx-auto  w-full ">
+    <div className="container mx-2 md:mx-auto  w-full ">
       {/* Overview Section */}
       <section ref={overviewRef} className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
