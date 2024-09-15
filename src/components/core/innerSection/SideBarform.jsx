@@ -10,8 +10,8 @@ const SideBarform = () => {
   };
 
   return (
-    <div className="">
-      <div className="max-w-sm mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div className="w-full">
+      <div className=" mx-auto p-4 bg-white rounded-lg shadow-md">
         <h2 className="text-lg font-semibold text-gray-700 mb-2">
           Get the List of{" "}
           <span className="text-blue-600">Computer Software Developers</span>

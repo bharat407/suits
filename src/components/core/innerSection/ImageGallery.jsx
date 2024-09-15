@@ -5,7 +5,7 @@ const ImageGallery = () => {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Large logo image */}
-        <div className="bg-blue-900 rounded-lg overflow-hidden h-64 sm:h-80 lg:h-[45vh]">
+        <div className="bg-blue-900 rounded-lg lg-block  overflow-hidden h-64 sm:h-80 lg:h-[45vh]">
           <img
             src="https://img.freepik.com/free-photo/empty-chairs-table-office_1170-755.jpg"
             alt="iSaral logo"

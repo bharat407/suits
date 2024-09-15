@@ -13,11 +13,11 @@ const InnerHome = () => {
         <ImageGallery />
         <BrandDetails />
       </div>
-      <div className="flex flex-col md:flex-row w-full justify-center my-2 gap-2 ">
+      <div className="flex flex-col md:flex-row w-full md:justify-around my-2 gap-2 ">
        <div className="md:w-[65%] w-full mx-auto">
           <BrandDesc />
        </div>
-        <div className="flex flex-col w-[full] ">
+        <div className="flex flex-col mx-1 lg:mx-auto md:w-[30%] w-full ">
           <SidebarContact />
           <SideBarform />
         </div>

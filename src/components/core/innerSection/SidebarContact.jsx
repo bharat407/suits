@@ -16,7 +16,7 @@ function SubSection({ icon, content }) {
 
 const SidebarContact = () => {
   return (
-    <div className="w-full ml-[-4vh] my-2 py-2 flex gap-2 border px-3 border-gray-300 rounded-lg flex-col">
+    <div className="w-full  my-2 py-2 flex gap-2 border px-3 border-gray-300 rounded-lg flex-col">
       <h3 className="text-xl font-semibold">Contact</h3>
       <div className="flex gap-4 items-center">
         <span>

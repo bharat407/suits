@@ -11,6 +11,7 @@ import {
 import { MdEdit } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { IoCopyOutline } from "react-icons/io5";
 
 const BrandDetails = () => {
   return (
@@ -70,14 +71,9 @@ const BrandDetails = () => {
             Enquire Now
           </button>
           <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
-            <FaRegBookmark className="text-gray-600" />
+            <IoCopyOutline className="text-gray-600 font-semibold" />
           </button>
-          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
-            <MdEdit className="text-gray-600" />
-          </button>
-          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
-            <FaShare className="text-gray-600" />
-          </button>
+          
         </div>
 
         <div className="flex flex-wrap gap-2 mt-4">
