@@ -1,102 +1,110 @@
-import React from 'react'
-import { FaThumbsUp, FaMapMarkerAlt, FaRegBookmark, FaShare, FaPhone, FaCommentAlt, FaWhatsappSquare } from "react-icons/fa";
+import React from "react";
+import {
+  FaThumbsUp,
+  FaMapMarkerAlt,
+  FaRegBookmark,
+  FaShare,
+  FaPhone,
+  FaCommentAlt,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
 
 const BrandDetails = () => {
   return (
-    
-
-   
-    <div className='max-w-[1400px] w-[96%] justify-center rounded-lg flex border relative border-slate-400'>
-
-
-      
-      <div className='flex flex-wrap flex-col p-3  gap-2'>
-
-        <div className='flex gap-2'>
-          <div className='px-4 py-2 md:normal ' >
-            <img src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg" className='w-20' alt="" />
+    <div className="max-w-[1400px] w-full sm:w-[96%] mx-auto rounded-lg border border-slate-300 overflow-hidden">
+      <div className="p-4 sm:p-6 space-y-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="w-20 h-20 flex-shrink-0">
+            <img
+              src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg"
+              className="w-full h-full object-cover rounded"
+              alt="Company Logo"
+            />
           </div>
-          <div className='flex flex-col'>
-            <div className='flex justify-between items-center text-lg font-semibold  gap-4'>
-              <div className='flex items-center gap-2'>
-                <FaThumbsUp />
-                <h2 className='text-3xl'>Isaral Business Solutions Pvt ltd</h2>
+          <div className="flex-grow">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <FaThumbsUp className="text-blue-500" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+                  Isaral Business Solutions Pvt ltd
+                </h2>
               </div>
-
+              <div className="flex items-center gap-2">
+                <span className="bg-green-500 text-white px-2 py-1 rounded text-sm font-semibold">
+                  4.8
+                </span>
+                <IoMdStar className="text-yellow-400" />
+                <p className="text-sm text-gray-600">307 Ratings</p>
+              </div>
             </div>
-            <div className='2ndrow flex items-center gap-2 text-lg'>
-              <span className='bg-green-500 px-2 rounded-md py-1'>
-                <p>4.8</p>
+            <div className="mt-2 flex items-center text-sm text-gray-600">
+              <FaMapMarkerAlt className="w-4 h-4 mr-1" />
+              <span className="flex flex-wrap gap-2">
+                <p>NagarBhavi Bangalore</p> • <p>3.67 km</p> •{" "}
+                <span className="text-green-500">Opens at 9:30 Tomorrow</span> •
+                9 Years in Business
               </span>
-              <IoMdStar />
-              <p>307 Ratings</p>
             </div>
           </div>
         </div>
-        <div className="flex  items-center mt-2 text-sm text-gray-600">
-          <FaMapMarkerAlt className="w-4 h-4 mr-1" />
-          <span className='flex text-lg gap-2'>
-            <p>NagarBhavi Bangalore</p> •  <p> 3.67 km</p> • <span className='text-green-500'>Opens at</span> 9:30 Tomorrow • 9 Years in Business
-          </span>
+
+        <div className="flex items-center text-gray-600 gap-2 text-sm sm:text-base">
+          <BsGraphUpArrow className="text-blue-500" />
+          <span>3570 people recently enquired</span>
         </div>
-        <div className="mt-2 items-center text-gray-600 flex gap-2 text-xl">
-          <BsGraphUpArrow />
-          3570 people recently enquired
-        </div>
-        <div className="my-2 flex items-center flex-wrap gap-3">
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex items-center">
+
+        <div className="flex flex-wrap gap-3">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex items-center transition duration-300">
             <FaPhone className="w-4 h-4 mr-2" />
             9058756578
           </button>
-          <button className="flex items-center gap-2 bg-slate-200 border border-green-600 hover:bg-slate-300 font-bold py-2 px-4  rounded">
-            <span className='text-2xl text-green-500'><FaWhatsappSquare /></span>
+          <button className="flex items-center gap-2 bg-white border border-green-500 text-green-500 hover:bg-green-50 font-bold py-2 px-4 rounded transition duration-300">
+            <FaWhatsappSquare className="text-2xl" />
             Whatsapp
           </button>
-          <button className=" flex items-center rounded-md bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 ">
+          <button className="flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
             <FaCommentAlt className="w-4 h-4 mr-2" />
             Enquire Now
           </button>
-          <button className='flex justify-center items-center text-xl px-1 py-1 border border-slate-400 bg-slate-200 hover:scale-110 rounded-md'>
-            <FaRegBookmark />
+          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
+            <FaRegBookmark className="text-gray-600" />
           </button>
-          <button className='flex justify-center items-center px-1 py-1 text-xl border border-slate-400 bg-slate-200 hover:scale-110 rounded-md'>
-            <MdEdit />
+          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
+            <MdEdit className="text-gray-600" />
           </button>
-          <button className='flex justify-center items-center px-1 text-xl py-1 border border-slate-400 bg-slate-200 hover:scale-110 rounded-md'>
-            < FaShare />
+          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
+            <FaShare className="text-gray-600" />
           </button>
         </div>
-        <div className='flex lg:absolute top-4 right-4 gap-2'>
-          <span className='px-2 py-1 hover:bg-slate-300 font-medium bg-slate-200 rounded-lg'>Digital signature services</span>
-          <span className='px-2 py-1 hover:bg-slate-300 rounded-lg font-medium bg-slate-200'>Online shopping websites</span>
-        </div>
-        <div className='flex lg:flex-col flex-row lg:absolute bottom-4 right-4 gap-2'>
-          <h3 className='text-lg font-semibold lg:mr-0 mr-4'>Click to Rate </h3>
-          <div className='flex gap-2'>
-            <span className='px-1 py-1 hover:bg-orange-500 flex justify-center border border-slate-500 rounded-md items-center'>
-              <IoMdStar />
-            </span>
-            <span className='px-1 py-1 flex justify-center  hover:bg-orange-500 border border-slate-500 rounded-md items-center'>
-              <IoMdStar />
-            </span>
-            <span className='px-1 py-1 flex justify-center border  hover:bg-orange-500 border-slate-500 rounded-md items-center'>
-              <IoMdStar />
-            </span>
-            <span className='px-1 py-1 flex justify-center  hover:bg-orange-500 border border-slate-500 rounded-md items-center'>
-              <IoMdStar />
-            </span>
-            <span className='px-1 py-1 flex justify-center border  hover:bg-orange-500 border-slate-500 rounded-md items-center'>
-              <IoMdStar />
-            </span>
 
+        <div className="flex flex-wrap gap-2 mt-4">
+          <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm hover:bg-slate-200 transition duration-300">
+            Digital signature services
+          </span>
+          <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm hover:bg-slate-200 transition duration-300">
+            Online shopping websites
+          </span>
+        </div>
+
+        <div className="mt-4 sm:mt-6">
+          <h3 className="text-lg font-semibold mb-2">Click to Rate</h3>
+          <div className="flex gap-2">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <button
+                key={star}
+                className="p-2 hover:bg-yellow-100 border border-slate-300 rounded-md transition duration-300"
+              >
+                <IoMdStar className="text-yellow-400" />
+              </button>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BrandDetails
+export default BrandDetails;
