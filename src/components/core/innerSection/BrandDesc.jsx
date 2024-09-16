@@ -47,9 +47,9 @@ const BrandDesc = () => {
   };
 
   return (
-    <div className="container mx-2 md:mx-auto  w-full ">
+    <div className="w-full ">
       {/* Overview Section */}
-      <section ref={overviewRef} className="mb-12">
+      <section ref={overviewRef} className="my-3">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
         <p className="text-gray-700">
           This is the overview section where you can add some random text about

@@ -15,7 +15,7 @@ import { IoCopyOutline } from "react-icons/io5";
 
 const BrandDetails = () => {
   return (
-    <div className="max-w-[1400px] w-full sm:w-[96%] mx-auto rounded-lg border border-slate-300 overflow-hidden">
+    <div className="max-w-[1400px] w-full mx-auto rounded-lg border border-slate-300 overflow-hidden">
       <div className="p-4 sm:p-6 space-y-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="w-20 h-20 flex-shrink-0">
