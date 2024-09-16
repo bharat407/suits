@@ -7,7 +7,7 @@ import RecentActivity from "../components/core/RecentActivity";
 
 const MainHomePage = () => {
   return (
-    <div className="w-screen max-w-[1400px] mx-auto">
+    <div className="w-screen max-w-[1400px] mx-auto overflow-x-hidden">
       <HeroHome />
       <Card />
       <FeaturedServices />
