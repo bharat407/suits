@@ -12,6 +12,7 @@ import { MdEdit } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { IoCopyOutline } from "react-icons/io5";
+import QuoraForm from "../QuoraForm";
 
 const BrandDetails = () => {
   return (
@@ -73,7 +74,7 @@ const BrandDetails = () => {
           <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
             <IoCopyOutline className="text-gray-600 font-semibold" />
           </button>
-          
+
         </div>
 
         <div className="flex flex-wrap gap-2 mt-4">
@@ -98,6 +99,10 @@ const BrandDetails = () => {
             ))}
           </div>
         </div>
+
+        <>
+          <QuoraForm />
+        </>
       </div>
     </div>
   );

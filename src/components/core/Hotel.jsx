@@ -102,8 +102,6 @@ const HotelListing = () => {
         </div>
       </div>
     </>
-
-    // </div>
   );
 };
 
