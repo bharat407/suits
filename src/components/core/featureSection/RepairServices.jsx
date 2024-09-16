@@ -5,7 +5,7 @@ import restaurant from "../../../assets/FeatureIcons/restaurant.svg";
 const ServiceCard = ({ imageSrc, Service }) => {
   return (
     <div className="flex gap-3 items-center ">
-      <img src={restaurant} alt="service icon" />
+      <img src={imageSrc} alt="service icon" />
       <h3>{Service}</h3>
     </div>
   );
@@ -20,20 +20,20 @@ const RepairServices = () => {
       </div>
       <div className="flex w-full">
         <div className="flex flex-col gap-4 basis-[33%]">
-          <ServiceCard imageSrc={restaurant} Service={"AC"} />
-          <ServiceCard imageSrc={restaurant} Service={"Laptop"} />
-          <ServiceCard imageSrc={restaurant} Service={"Refrigirator"} />
-          <ServiceCard imageSrc={restaurant} Service={"Water Purifier"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_ac.png?w=48&q=75"} Service={"AC"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_car.png?w=48&q=75"} Service={"Laptop"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_refrigerator.png?w=48&q=75"} Service={"Refrigirator"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_waterpurifier.png?w=48&q=75"} Service={"Water Purifier"} />
         </div>
         <div className="flex flex-col gap-4 basis-[33%]">
-          <ServiceCard imageSrc={restaurant} Service={"Car"} />
-          <ServiceCard imageSrc={restaurant} Service={"Mobile Phone"} />
-          <ServiceCard imageSrc={restaurant} Service={"Tv"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_car.png?w=48&q=75"} Service={"Car"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_mobilephone.png?w=48&q=75"} Service={"Mobile Phone"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_tv.png?w=48&q=75"} Service={"Tv"} />
         </div>
         <div className="flex flex-col gap-4 basis-[33%]">
-          <ServiceCard imageSrc={restaurant} Service={"Computer"} />
-          <ServiceCard imageSrc={restaurant} Service={"Motercycle"} />
-          <ServiceCard imageSrc={restaurant} Service={"washing machine"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_computer.png?w=48&q=75"} Service={"Computer"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_motorcycle.png?w=48&q=75"} Service={"Motercycle"} />
+          <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_washingmachine.png?w=48&q=75"} Service={"washing machine"} />
         </div>
       </div>
     </div>

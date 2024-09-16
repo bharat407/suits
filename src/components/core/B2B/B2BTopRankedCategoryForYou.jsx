@@ -16,18 +16,18 @@ const categories = [
       "https://images.jdmagicbox.com/quickquotes/images_main/party-propz-seasonal-decorations-11-08-2021-783-240037580-b4xu1.jpg",
   },
   {
-    name: "Buns",
+    name: "Bread",
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…n-mix-veg-burger-patty-360-gm-160108959-m7uel.jpg",
+      "https://images.jdmagicbox.com/quickquotes/images_main/-ked8v.jpg",
   },
   {
-    name: "Waffle",
+    name: "Whip topping",
     image:
-      "https://images.jdmagicbox.com/quickquotes/images_m…-bakers-waffle-09-12-2021-503-270686255-ptuxn.jpg",
+      "https://images.jdmagicbox.com/quickquotes/images_main/-fs4pb.png",
   },
   {
-    name: "Cake",
-    image: "https://images.jdmagicbox.com/quickquotes/images_main/-92aht.jpg",
+    name: "Cookie",
+    image: "https://images.jdmagicbox.com/quickquotes/images_main/nutroactive-brownxcookies-low-carb-high-protein-gluten-free-vanilla-flavour-cookies-210-gm-106779300-o81d8.png",
   },
 ];
 
