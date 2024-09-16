@@ -44,10 +44,12 @@ const Carousel = () => {
   };
 
   const images = [
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_cctv_2024.webp",
     "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
-    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
-    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
-    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/gchaturthiweb.png",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_hotels_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_packersmovers_2024.webp",
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_interiordesigners_2024.webp"
   ];
 
   return (
@@ -98,8 +100,8 @@ const HeroHome = () => {
         />
         <CategoryCard
           className=""
-          source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
-          text="Repair"
+          source="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/b2b_square_hotkey.webp?w=1920&q=75 "
+          text="Quick notes"
           desc="Finest Agents"
           onclick={handlerepair}
         />
@@ -112,8 +114,8 @@ const HeroHome = () => {
         />
         <CategoryCard
           className=""
-          source="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png "
-          text="Doctor"
+          source="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/repair_square_hotkey.webp?w=1920&q=75 "
+          text="repair and service"
           desc="Consult Now"
         />
       </div>
