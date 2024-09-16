@@ -74,7 +74,7 @@ const HeroHome = () => {
 
   const handleNavigate = (e) => {
     e.preventDefault();
-    navigate("/register");
+    navigate("/b2b");
   };
 
   const handlereal = (e) => {
