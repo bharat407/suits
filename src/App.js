@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import InnerHome from "./components/core/innerSection/InnerHome";
 import Login from "./components/common/Login";
+import Register from "./components/common/Register";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
         <Route path="/repair" element={<Repair />}></Route>
         <Route path="/quora" element={<Quora />}></Route>
         <Route path="/innerhome" element={<InnerHome />}></Route>
-        <Route path="/" element={<Login />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/" element={<Register />}></Route>
       </Routes>
       <Analytics />
       <SpeedInsights />

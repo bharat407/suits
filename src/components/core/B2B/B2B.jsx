@@ -7,6 +7,8 @@ const B2B = () => {
     <div className="max-w-[1400px] w-full mx-auto">
       <TopBrand/>
       <TopRanked/>
+      <TopRanked/>
+      <TopRanked/>
     </div>
   );
 };
