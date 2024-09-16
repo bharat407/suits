@@ -10,7 +10,7 @@ const CategoryCard = ({ source, text, desc, onclick }) => {
   return (
     <div
       className="rounded-lg cursor-pointer flex  overflow-hidden flex-col relative bg-purple-300 w-[24%] md:w-[30%] lg:w-[18.75%]  items-center  justify-center"
-      onClick={onclick} // Added onClick here
+      onClick={onclick} 
     >
       <p className="text-left absolute hover:scale-[1.12]  left-2 top-2  text-lg font-semibold">
         {text}
@@ -96,7 +96,7 @@ const HeroHome = () => {
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
           text="B2B"
           desc="Get nearest Vendors"
-          onclick={handleNavigate} // Pass the handler here
+          onclick={handleNavigate} 
         />
         <CategoryCard
           className=""
