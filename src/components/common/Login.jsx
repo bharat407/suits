@@ -36,6 +36,7 @@ const Login = () => {
         </div>
 
         <button className='bg-blue-500 w-[70%] font-semibold px-3 py-3 rounded-lg'>Login with OTP</button>
+          <p>if You have'nt register yet then please <span className='text-blue-500 underline font-semibold'>Register</span> </p>
 
         <div className='flex gap-1 w-[70%] my-3 items-center justify-center'>
               <span className='w-[30%]'><hr className='w-full text-slate-300' /></span>
