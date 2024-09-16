@@ -18,7 +18,7 @@ const pgData = [
       "	https://images.jdmagicbox.com/v2/comp/bangalore/i3/080pxx80.xx80.221011191254.c7i3/catalogue/-62uizcvrti.jpg",
     reviewer: "Altafulla Hurkadli",
     review:
-      "Chegus Perennial Pg offers clean, comfortable rooms for both men and women. The rental stay was excellent, with well-maintained facilities and a peaceful environment.",
+      "Chegus Perennial Pg offers clean, comfortable rooms for both men and women. The rental stay was excellent, with well-maintained.",
     rating: 5,
   },
   {
