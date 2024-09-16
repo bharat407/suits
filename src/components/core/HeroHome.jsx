@@ -22,7 +22,7 @@ const CategoryCard = ({ source, text, desc, onclick }) => {
         alt="image"
         src={source}
         width={180}
-        className=" absolute right-[-25%] bottom-[0%]"
+        className=" absolute right-[-10%] bottom-[0%]"
       />
       <button className="absolute bg-blue-600 px-1 py-1 rounded-md text-sm left-0 bottom-8 ml-1 hover:grow">
         <FaGreaterThan />
