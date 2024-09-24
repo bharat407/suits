@@ -57,16 +57,16 @@ const ServiceCard = ({ imageSrc, Service }) => {
 
 const RepairServices = () => {
   return (
-    <div className="w-full my-4 max-w-[1400px] mx-auto">
+    <div className="w-full my-4 max-w-[1400px] ">
       <div className="h-[30vh] w-full">
         <img src="https://rapidsignsbc.com/wp-content/uploads/2016/10/repair-top-banner-2.jpg" className="h-full w-full object-cover object-center rounded-md" alt="" />
       </div>
-      <div className="flex flex-col w-full  ">
+      <div className="flex flex-col w-full px-6">
         <div className="flex md:w-[45%]  lg:w-[20%] w-[90%] border border-gray-300 items-center gap-2 rounded-lg  my-3 px-2 py-2">
           <FaSearch></FaSearch>
           <input type="text" placeholder="Search All Category" />
         </div>
-        <div className="flex w-full flex-wrap justify-evenly">
+        <div className="flex w-full flex-wrap ">
           <div className="flex flex-col gap-4 basis-[50%] my-2 md:basis-[33%] ">
             <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_ac.png?w=48&q=75"} Service={"AC"} />
             <ServiceCard imageSrc={"https://akam.cdn.jdmagicbox.com/images/icons/android/2x/i_car.png?w=48&q=75"} Service={"Laptop"} />
