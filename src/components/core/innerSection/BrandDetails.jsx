@@ -1,108 +1,105 @@
 import React from "react";
 import {
-  FaThumbsUp,
   FaMapMarkerAlt,
+  FaWhatsapp,
   FaRegBookmark,
   FaShare,
-  FaPhone,
-  FaCommentAlt,
-  FaWhatsappSquare,
+  FaPen,
 } from "react-icons/fa";
-import { MdEdit } from "react-icons/md";
-import { IoMdStar } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
-import { IoCopyOutline } from "react-icons/io5";
-import QuoraForm from "../QuoraForm";
+import { IoMdStar } from "react-icons/io";
 
 const BrandDetails = () => {
   return (
-    <div className="max-w-[1400px] w-full mx-auto rounded-lg border border-slate-300 overflow-hidden">
-      <div className="p-4 sm:p-6 space-y-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="w-20 h-20 flex-shrink-0">
-            <img
-              src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg"
-              className="w-full h-full object-cover rounded"
-              alt="Company Logo"
-            />
-          </div>
+    <div className=" w-full bg-white shadow-lg rounded-xl overflow-hidden">
+      <div className="p-4 space-y-4">
+        {/* Header Section */}
+        <div className="flex items-center space-x-4">
+          <img
+            src="https://content.jdmagicbox.com/bangalore/u7/080pxx80.xx80.170601133428.l7u7/logo/b7fecef67fcdc33953bc4b3748680bfa-s.jpg"
+            alt="Company Logo"
+            className="w-12 h-12 rounded-md"
+          />
           <div className="flex-grow">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-              <div className="flex items-center gap-2">
-                <FaThumbsUp className="text-blue-500" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-                  Isaral Business Solutions Pvt ltd
-                </h2>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="bg-green-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                  4.8
+            <div className="flex items-center justify-between">
+              <h1 className="text-xl font-bold text-gray-800">
+                Isaral Business Solutions Pvt Lt
+              </h1>
+              <div className="flex space-x-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">
+                  Digital Signature Services
                 </span>
-                <IoMdStar className="text-yellow-400" />
-                <p className="text-sm text-gray-600">307 Ratings</p>
+                <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">
+                  Online Shopping Websites
+                </span>
               </div>
             </div>
-            <div className="mt-2 flex items-center text-sm text-gray-600">
-              <FaMapMarkerAlt className="w-4 h-4 mr-1" />
-              <span className="flex flex-wrap gap-2">
-                <p>NagarBhavi Bangalore</p> • <p>3.67 km</p> •{" "}
-                <span className="text-green-500">Opens at 9:30 Tomorrow</span> •
-                9 Years in Business
+            <div className="flex items-center space-x-2 mt-1">
+              <span className="bg-green-600 text-white px-2 py-0.5 rounded text-sm font-semibold">
+                4.8 ★
+              </span>
+              <span className="text-sm text-gray-600">370 Ratings</span>
+              <span className="text-sm text-blue-600 font-semibold">
+                Verified
               </span>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center text-gray-600 gap-2 text-sm sm:text-base">
-          <BsGraphUpArrow className="text-blue-500" />
-          <span>3570 people recently enquired</span>
-        </div>
-
-        <div className="flex flex-wrap gap-3">
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex items-center transition duration-300">
-            <FaPhone className="w-4 h-4 mr-2" />
-            9058756578
-          </button>
-          <button className="flex items-center gap-2 bg-white border border-green-500 text-green-500 hover:bg-green-50 font-bold py-2 px-4 rounded transition duration-300">
-            <FaWhatsappSquare className="text-2xl" />
-            Whatsapp
-          </button>
-          <button className="flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-            <FaCommentAlt className="w-4 h-4 mr-2" />
-            Enquire Now
-          </button>
-          <button className="p-2 border border-slate-300 bg-white hover:bg-slate-100 rounded-full transition duration-300">
-            <IoCopyOutline className="text-gray-600 font-semibold" />
-          </button>
-
-        </div>
-
-        <div className="flex flex-wrap gap-2 mt-4">
-          <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm hover:bg-slate-200 transition duration-300">
-            Digital signature services
+        {/* Location and Business Info */}
+        <div className="text-sm text-gray-600 justify-between  flex items-center space-x-2">
+          <span className="flex flex-row gap-3 items-center">
+            <FaMapMarkerAlt />
+            Nagarbhavi, Bangalore • 3.67 km •{" "}
+            <span className="text-green-600">Open until 8:00 pm</span> • 9 Years
+            in Business
           </span>
-          <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm hover:bg-slate-200 transition duration-300">
-            Online shopping websites
+          <span className=" flex flex-row gap-3 items-center">
+            <BsGraphUpArrow className="text-blue-500" />
+            1904 people recently enquired
           </span>
         </div>
 
-        <div className="mt-4 sm:mt-6">
-          <h3 className="text-lg font-semibold mb-2">Click to Rate</h3>
-          <div className="flex gap-2">
+        {/* Recent Enquiries */}
+        <div className="flex items-center justify-between text-sm text-gray-600 space-x-2">
+          <div className="flex items-center space-x-3">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300">
+              09980228364
+            </button>
+            <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300">
+              Enquire Now
+            </button>
+            <button className="px-4 py-2 border border-green-600 text-green-600 rounded-md hover:bg-green-50 transition duration-300 flex items-center">
+              <FaWhatsapp className="mr-2" />
+              WhatsApp
+            </button>
+            <button className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition duration-300">
+              <FaShare />
+            </button>
+            <button className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition duration-300">
+              <FaRegBookmark />
+            </button>
+            <button className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition duration-300">
+              <FaPen />
+            </button>
+          </div>
+        </div>
+
+        {/* Action Buttons */}
+
+        {/* Rating Section */}
+        <div className="flex items-center justify-between">
+          <div>
             {[1, 2, 3, 4, 5].map((star) => (
               <button
                 key={star}
-                className="p-2 hover:bg-yellow-100 border border-slate-300 rounded-md transition duration-300"
+                className="text-gray-300 hover:text-yellow-400 transition duration-300"
               >
-                <IoMdStar className="text-yellow-400" />
+                <IoMdStar size={24} className="inline" />
               </button>
             ))}
           </div>
         </div>
-
-        <>
-          {/* <QuoraForm /> */}
-        </>
       </div>
     </div>
   );

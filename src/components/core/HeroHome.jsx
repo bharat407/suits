@@ -53,7 +53,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="py-1 w-[98%] lg:w-2/3 xl:w-1/2 rounded-md mx-auto my-4">
+    <div className="py-1 w-[98%] lg:w-2/3 xl:w-1/2 rounded-md  my-4">
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index}>

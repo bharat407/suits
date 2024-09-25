@@ -6,9 +6,9 @@ import FilterSection from "../../section/FilterSection";
 
 const B2B = () => {
   return (
-    <div className="max-w-[1400px] w-full mx-px">
+    <div className="w-full">
       <SearchBar />
-      <FilterSection heading="" />
+      <FilterSection />
       <TopBrand />
       <TopRanked />
       <TopRanked />

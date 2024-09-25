@@ -35,7 +35,7 @@ const pgData = [
 
 const PGCard = ({ pg }) => {
   return (
-    <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mt-6 mx-auto">
+    <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mt-6 ">
       <img className="w-full cursor-pointer hover:scale-105 transition-all h-48 object-cover" src={pg.image} alt={pg.name} />
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-900">{pg.name}</h3>
@@ -62,7 +62,7 @@ const PGCard = ({ pg }) => {
 
 const RecentActivity = () => {
   return (
-    <div className="container mx-auto px-2 py-2 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="container  px-2 py-2 grid grid-cols-1 md:grid-cols-3 gap-4">
       {pgData.map((pg, index) => (
         <PGCard key={index} pg={pg} />
       ))}

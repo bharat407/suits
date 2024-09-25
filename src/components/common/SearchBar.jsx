@@ -48,7 +48,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="flex flex-col md:mx-auto w-full gap-2 my-2 px-4 md:px-6 max-w-[1400px]">
+      <div className="flex flex-col md: w-full gap-2 my-2 px-4 md:px-6 max-w-[1400px]">
         <div className="relative mt-3">
           <h2 className="text-3xl font-semibold">
             Search across{" "}

@@ -31,7 +31,7 @@ const QuoraForm = () => {
   };
 
   return (
-    <div className="w-full px-2 md:w-[70%] bg-white flex flex-col border gap-3 py-3 border-gray-200 rounded-lg my-2 md:px-4 mx-auto">
+    <div className="w-full px-2 md:w-[70%] bg-white flex flex-col border gap-3 py-3 border-gray-200 rounded-lg my-2 md:px-4 ">
       <div className="flex gap-3 items-center">
         <img
           src={call}

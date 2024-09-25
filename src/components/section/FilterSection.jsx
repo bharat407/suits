@@ -4,7 +4,7 @@ import Dropdrown from '../common/DropdownFilter'
 
 const FilterSection = ({ heading }) => {
     return (
-        <div className='flex flex-col mx-auto'>
+        <div className='flex flex-col '>
 
             <h2 className='text-3xl mx-4 my-2 mt-2 font-semibold'>{heading}</h2>
             <div className='flex mx-2'>

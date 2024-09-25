@@ -11,7 +11,7 @@ const SideBarform = () => {
 
   return (
     
-      <div className="w-full mx-auto p-4 bg-white rounded-lg shadow-md border border-slate-400">
+      <div className="w-full  p-4 bg-white rounded-lg shadow-md border border-slate-400">
         <h2 className="text-lg font-semibold text-gray-700 mb-2">
           Get the List of{" "}
           <span className="text-blue-600">Computer Software Developers</span>

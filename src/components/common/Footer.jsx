@@ -5,7 +5,7 @@ const LinksSection = () => {
   return (
     <div className="bg-white my-3 p-9 ">
       <hr className="border-gray-200 w-full mb-4 border" />
-      <div className="mx-auto">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
             <h2 className="text-xl font-semibold mb-4">Quick Links</h2>

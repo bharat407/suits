@@ -16,7 +16,8 @@ const LoginModal = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
       <div className="bg-white p-6 rounded-lg shadow-lg w-[35%]">
         <div className="flex justify-between items-center mb-4">
-          <div className="flex items-center text-4xl text-[#d10001]">Nitar</div>
+          <div className="text-4xl text-[#d10001]">Nitar</div>
+          <div className=" text-2xl font-semibold">Welcome</div>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700"
@@ -78,7 +79,7 @@ const Header = () => {
   return (
     <>
       <header className="top-0 left-0 w-full overflow-hidden z-40 bg-white shadow-md py-4">
-        <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center max-w-7xl px-4">
           {/* Left Section: Logo */}
           <div className="flex ml-5 items-center">
             <a
@@ -96,7 +97,7 @@ const Header = () => {
             {/* Language Dropdown */}
 
             {/* <div className="relative group"> */}
-              {/* <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
+            {/* <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
                 <img
                   src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
                   alt=""
@@ -105,8 +106,8 @@ const Header = () => {
                 <RiArrowDropDownLine size={28} />
               </button> */}
 
-              {/* Dropdown Menu */}
-              {/* <div className="absolute left-0 mt-1 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-500">
+            {/* Dropdown Menu */}
+            {/* <div className="absolute left-0 mt-1 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-500">
                 {[
                   "English - EN",
                   "हिंदी - HI",

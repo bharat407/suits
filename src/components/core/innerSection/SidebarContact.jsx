@@ -24,7 +24,7 @@ const SidebarContact = () => {
         </span>
         <p className="text-lg text-blue-500 font-semibold">9655448897</p>
       </div>
-      <hr className="w-[95%] mx-auto" />
+      <hr className="w-[95%] " />
       <div>
         <h3 className="text-xl font-semibold my-1">Address</h3>
         <p className="text-lg">

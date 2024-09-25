@@ -56,7 +56,7 @@ const customData = [
 
 function CustomCard() {
   return (
-    <div className=" w-[95%] mx-auto flex flex-wrap gap-12 ">
+    <div className=" w-[95%]  flex flex-wrap gap-12 ">
       {customData.map((item) => (
         <div
           key={item.id}

@@ -17,7 +17,7 @@ const Features = ({ text, source }) => {
 
 const FeatureCard = () => {
   return (
-    <div className=" w-full max-w-[1400px] flex flex-wrap justify-center gap-3 mx-auto ">
+    <div className=" w-full max-w-[1400px] flex flex-wrap justify-center gap-3  ">
 
       <Features text="Restaurant" source={"https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75"} />
       <Features text="Hotels" source={"https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=48&q=75"} />

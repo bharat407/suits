@@ -6,10 +6,10 @@ import Sidebar from "../components/common/Sidebar";
 
 const RealEstate = () => {
   return (
-    <div className=" mx-auto">
+    <div className=" ">
       <Accomdation />
       <FilterSection heading="Estate Agents In Mumbai" />
-      <div className="flex gap-2 mx-auto">
+      <div className="flex gap-2 ">
         <Hotel />
         <Sidebar />
       </div>

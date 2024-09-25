@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const brandData = [
@@ -60,7 +61,7 @@ const BrandCard = ({ brand }) => {
 
 const B2BCategoryTopBrand = () => {
   return (
-    <div className="container flex flex-col mx-auto p-8">
+    <div className="container flex flex-col p-6 ">
       <div className="flex items-center justify-between my-2 ">
         <h2 className="text-xl font-bold ">
           Top Brands Based On Your Search

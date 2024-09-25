@@ -4,8 +4,8 @@ import { FaFacebook } from "react-icons/fa";
 
 const Register = () => {
     return (
-        <div className='md:w-[80%] w-[98%] md:h-[45%] lg:w-[40%] lg:h-[40%]  rounded-xl py-6 flex flex-col mx-auto border border-slate-500 justify-center items-center gap-2'>
-            <div className='flex flex-col md:flex-row items-center justify-center mx-auto '>
+        <div className='md:w-[80%] w-[98%] md:h-[45%] lg:w-[40%] lg:h-[40%]  rounded-xl py-6 flex flex-col  border border-slate-500 justify-center items-center gap-2'>
+            <div className='flex flex-col md:flex-row items-center justify-center  '>
                 <span className='text-4xl font-semibold  '>
                     <a
                         href="/"

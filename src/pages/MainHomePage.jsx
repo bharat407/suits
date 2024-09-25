@@ -9,7 +9,7 @@ import FilterSection from "../components/section/FilterSection";
 
 const MainHomePage = () => {
   return (
-    <div className="w-screen max-w-[1400px] mx-auto overflow-x-hidden">
+    <div className="w-full overflow-hidden">
       <SearchBar />
       <FilterSection heading="" />
       <HeroHome />

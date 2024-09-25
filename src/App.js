@@ -14,7 +14,7 @@ import Register from "./components/common/Register";
 
 const App = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto">
+    <div className="w-full max-w-[1400px] ">
       <Navbar />
       <Routes>
         <Route path="/" element={<MainHomePage />}></Route>
