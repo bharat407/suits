@@ -35,8 +35,8 @@ const pgData = [
 
 const PGCard = ({ pg }) => {
   return (
-    <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-2 mx-auto">
-      <img className="w-full h-48 object-cover" src={pg.image} alt={pg.name} />
+    <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mt-6 mx-auto">
+      <img className="w-full cursor-pointer hover:scale-105 transition-all h-48 object-cover" src={pg.image} alt={pg.name} />
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-900">{pg.name}</h3>
         <p className="text-sm text-gray-600">{pg.location}</p>

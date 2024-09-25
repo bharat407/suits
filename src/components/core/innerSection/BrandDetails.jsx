@@ -101,7 +101,7 @@ const BrandDetails = () => {
         </div>
 
         <>
-          <QuoraForm />
+          {/* <QuoraForm /> */}
         </>
       </div>
     </div>

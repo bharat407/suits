@@ -42,7 +42,7 @@ const PopularSearches = () => {
               <img
                 src={service.imageUrl}
                 alt={service.title}
-                className="w-full h-48 hover:scale-[1.12] object-cover"
+                className="w-full h-48 cursor-pointer transition-all hover:scale-[1.12] object-cover"
               />
             </div>
             <div className="p-4 text-center">

@@ -9,7 +9,7 @@ import Quora from "./components/core/QuoraForm";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import InnerHome from "./components/core/innerSection/InnerHome";
-// import Login from "./components/common/Login";
+import Footer from "./components/common/Footer";
 import Register from "./components/common/Register";
 
 const App = () => {
@@ -28,6 +28,7 @@ const App = () => {
       </Routes>
       <Analytics />
       <SpeedInsights />
+      <Footer />
     </div>
   );
 };

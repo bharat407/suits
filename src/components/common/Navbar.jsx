@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { FcAdvertising, FcGoogle } from "react-icons/fc";
 import { BsGraphUpArrow } from "react-icons/bs";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { X } from "lucide-react";
@@ -94,18 +94,19 @@ const Header = () => {
           {/* Right Section: Navigation */}
           <div className="hidden md:flex items-center">
             {/* Language Dropdown */}
-            <div className="relative group">
-              <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
+
+            {/* <div className="relative group"> */}
+              {/* <button className="text-[#0076D7] hover:bg-[#EBEBEB] hover:rounded-md px-3 py-2 font-medium flex items-center space-x-1">
                 <img
                   src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/nav_language_icon.svg"
                   alt=""
                 />
                 <span>EN</span>
                 <RiArrowDropDownLine size={28} />
-              </button>
+              </button> */}
 
               {/* Dropdown Menu */}
-              <div className="absolute left-0 mt-1 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-500">
+              {/* <div className="absolute left-0 mt-1 w-32 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-500">
                 {[
                   "English - EN",
                   "हिंदी - HI",
@@ -123,8 +124,8 @@ const Header = () => {
                     {lang}
                   </a>
                 ))}
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
 
             {/* Navigation Links */}
             {["Investor Relations"].map((text, index) => (
@@ -168,12 +169,7 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white p-4 shadow-md rounded-md mt-2">
-            {[
-              "We are Hiring",
-              "Investor Relations",
-              "Advertise",
-              "Free Listing",
-            ].map((text, index) => (
+            {["Investor Relations"].map((text, index) => (
               <a
                 key={index}
                 className="text-black hover:bg-[#EBEBEB] cursor-pointer hover:rounded-md px-3 py-2 transition flex items-center"
