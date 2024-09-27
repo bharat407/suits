@@ -13,26 +13,34 @@ const LoginModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-[35%]">
-        <div className="flex justify-between items-center mb-4">
-          <div className="text-4xl text-[#d10001]">Nitar</div>
-          <div className=" text-2xl font-semibold">Welcome</div>
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 p-4">
+      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full max-w-[90%] sm:max-w-[400px] md:max-w-[450px]">
+        <div className="flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-3xl sm:text-4xl text-[#d10001] mb-2 sm:mb-0">
+            Nitar
+          </div>
+          <div className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-0">
+            Welcome
+          </div>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500 hover:text-gray-700 absolute top-2 right-2 sm:static"
           >
             <X size={24} />
           </button>
         </div>
-        <p className="mb-4 text-gray-600">Login for a seamless experience</p>
+        <p className="mb-4 text-gray-600 text-sm text-center">
+          Login for a seamless experience
+        </p>
         <div className="mb-4">
           <div className="flex border rounded">
-            <span className="bg-gray-100 px-3 py-2 text-gray-500">+91</span>
+            <span className="bg-gray-100 px-2 sm:px-3 py-2 text-gray-500 text-sm sm:text-base">
+              +91
+            </span>
             <input
               type="tel"
               placeholder="Enter Mobile Number*"
-              className="flex-grow px-3 py-2"
+              className="flex-grow px-2 sm:px-3 py-2 text-sm sm:text-base"
               value={mobileNumber}
               onChange={(e) => setMobileNumber(e.target.value)}
             />
@@ -46,26 +54,28 @@ const LoginModal = ({ isOpen, onClose }) => {
             checked={agreeTerms}
             onChange={(e) => setAgreeTerms(e.target.checked)}
           />
-          <label htmlFor="terms" className="text-sm text-gray-600">
+          <label htmlFor="terms" className="text-xs sm:text-sm text-gray-600">
             I Agree to Terms and Conditions
           </label>
         </div>
 
         <div className="flex flex-col items-center">
-          <button className="w-80 bg-blue-500 text-white py-2 rounded-xl mb-4">
+          <button className="w-full sm:w-80 bg-blue-500 text-white py-2 rounded-xl mb-4 text-sm sm:text-base">
             Login with OTP
           </button>
-          <div className="text-center text-sm text-gray-500 mb-4">
+          <div className="text-center text-xs sm:text-sm text-gray-500 mb-4">
             Or Login Using
           </div>
-          <button className="w-80 rounded-xl gap-2 border py-2 flex items-center justify-center">
-            <FcGoogle size={24} />
+          <button className="w-full sm:w-80 rounded-xl gap-2 border py-2 flex items-center justify-center text-sm sm:text-base">
+            <FcGoogle size={20} className="sm:text-2xl" />
             <p>Google</p>
           </button>
         </div>
 
-        <div className="mt-4">
-          <button className="text-gray-500 hover:text-gray-700">Skip</button>
+        <div className="mt-4 text-center sm:text-left">
+          <button className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
+            Skip
+          </button>
         </div>
       </div>
     </div>

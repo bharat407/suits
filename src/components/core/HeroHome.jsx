@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider from "react-slick";
 import { FaGreaterThan } from "react-icons/fa";
@@ -10,7 +11,7 @@ const CategoryCard = ({ source, text, desc, onclick }) => {
   return (
     <div
       className="rounded-lg cursor-pointer flex  overflow-hidden flex-col relative bg-purple-300 w-[24%] md:w-[30%] lg:w-[18.75%]  items-center  justify-center"
-      onClick={onclick} 
+      onClick={onclick}
     >
       <p className="text-left absolute hover:scale-[1.12]  left-2 top-2  text-lg font-semibold">
         {text}
@@ -49,7 +50,7 @@ const Carousel = () => {
     "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/gchaturthiweb.png",
     "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_hotels_2024.webp",
     "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_packersmovers_2024.webp",
-    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_interiordesigners_2024.webp"
+    "https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_interiordesigners_2024.webp",
   ];
 
   return (
@@ -96,7 +97,7 @@ const HeroHome = () => {
           source="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-power-lineman-electrician-png-image_10213755.png "
           text="B2B"
           desc="Get nearest Vendors"
-          onclick={handleNavigate} 
+          onclick={handleNavigate}
         />
         <CategoryCard
           className=""

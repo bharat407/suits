@@ -3,7 +3,7 @@ import React from "react";
 const ImageGallery = () => {
   return (
     <div className=" flex  flex-col sm:flex-row gap-1">
-      <div className="flex w-full sm:w-1/3 h-48 sm:h-auto hidden sm:flex">
+      <div className="w-full sm:w-1/3 h-48 sm:h-auto hidden sm:flex">
         <img
           src="https://img.freepik.com/free-photo/empty-chairs-table-office_1170-755.jpg"
           alt="iSaral logo"
@@ -11,7 +11,7 @@ const ImageGallery = () => {
         />
       </div>
 
-      <div className="flex w-full sm:w-1/3 h-48 sm:h-auto hidden sm:flex">
+      <div className="w-full sm:w-1/3 h-48 sm:h-auto hidden sm:flex">
         <img
           src="https://content.jdmagicbox.com/v2/comp/bangalore/u7/080pxx80.xx80.170601133428.l7u7/catalogue/isaral-business-solutions-pvt-lt-nagarbhavi-bangalore-digital-signature-services-pbsqvq0ba5.jpg?w=1920&q=75"
           alt="Office front"
