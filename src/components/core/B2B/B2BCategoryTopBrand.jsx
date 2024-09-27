@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const brandData = [
   {
-    image:
-      "https://media.britannia.co.in/Good_Day_Chocochip_ce1e99ab80.jpg",
+    image: "https://media.britannia.co.in/Good_Day_Chocochip_ce1e99ab80.jpg",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/Cake_Britannia.jpg",
     brandName: "BRITANNIA",
   },
@@ -34,7 +32,7 @@ const brandData = [
   },
   {
     image:
-      "	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQOzsTGjMUANEyGUPt90mzSRxKpJzaAygUQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQOzsTGjMUANEyGUPt90mzSRxKpJzaAygUQ&s",
     logo: "https://images.jdmagicbox.com/quickquotes/logos/Cake/RAJA_Cake.jpg",
     brandName: "Raja",
   },
@@ -42,16 +40,16 @@ const brandData = [
 
 const BrandCard = ({ brand }) => {
   return (
-    <div className="flex-shrink-0 w-48 bg-white shadow-lg rounded-lg overflow-hidden my-2">
+    <div className="flex-shrink-0 w-full sm:w-48 bg-white shadow-lg rounded-lg overflow-hidden my-2">
       <img
-        className="w-full h-[70%] object-cover"
+        className="w-full h-32 sm:h-40 object-cover"
         src={brand.image}
         alt={brand.brandName}
       />
-      <div className=" flex h-[30%] justify-center items-center">
+      <div className="flex h-16 sm:h-20 justify-center items-center p-2">
         <img
-          className="object-cover object-center"
-          src={brand.logo} width={90}
+          className="object-contain object-center max-h-full"
+          src={brand.logo}
           alt={`${brand.brandName} Logo`}
         />
       </div>
@@ -61,16 +59,16 @@ const BrandCard = ({ brand }) => {
 
 const B2BCategoryTopBrand = () => {
   return (
-    <div className="container flex flex-col p-6 ">
-      <div className="flex items-center justify-between my-2 ">
-        <h2 className="text-xl font-bold ">
+    <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6">
+        <h2 className="text-lg sm:text-xl font-bold mb-2 sm:mb-0">
           Top Brands Based On Your Search
         </h2>
-        <a href="" className="text-blue-600 font-semibold">
+        <a href="#" className="text-blue-600 font-semibold">
           View All
         </a>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
         {brandData.map((brand, index) => (
           <BrandCard key={index} brand={brand} />
         ))}
