@@ -47,20 +47,21 @@ const BrandDesc = () => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {/* Overview Section */}
       <section ref={overviewRef} className="my-3">
-        <h2 className="text-2xl font-semibold mb-4">Overview</h2>
-        <p className="text-gray-700">
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Overview</h2>
+        <p className="text-sm md:text-base text-gray-700">
           This is the overview section where you can add some random text about
           the brand, its mission, vision, and services. You can modify or expand
           this text later to include more detailed information about the
           business.
         </p>
       </section>
+
       {/* Navbar */}
-      <nav className="mb-8">
-        <ul className="flex flex-wrap  text-sm font-medium text-center text-gray-500">
+      <nav className="mb-8 overflow-x-auto">
+        <ul className="flex whitespace-nowrap text-sm font-medium text-center text-gray-500">
           {tabs.map((tab) => (
             <li key={tab} className="mr-2">
               <button
@@ -81,16 +82,22 @@ const BrandDesc = () => {
       {/* Quick Info Section */}
       <section
         ref={quickInfoRef}
-        className="flex justify-between p-6 border-solid border-[1px]"
+        className="flex flex-col md:flex-row justify-between p-4 md:p-6 border-solid border-[1px]"
       >
-        <div className="quick-info">
-          <h2 className="text-xl font-semibold mb-4">Quick Information</h2>
-          <p className="text-gray-600">Year of Establishment</p>
-          <p className="text-lg font-medium">2015</p>
+        <div className="quick-info mb-4 md:mb-0">
+          <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">
+            Quick Information
+          </h2>
+          <p className="text-sm md:text-base text-gray-600">
+            Year of Establishment
+          </p>
+          <p className="text-base md:text-lg font-medium">2015</p>
         </div>
         <div className="timings">
-          <h2 className="text-xl font-semibold mb-4">Timings</h2>
-          <table className="w-full">
+          <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">
+            Timings
+          </h2>
+          <table className="w-full text-sm md:text-base">
             <tbody>
               <tr>
                 <td className="pr-4 py-1">Mon - Fri</td>
@@ -106,7 +113,7 @@ const BrandDesc = () => {
               </tr>
             </tbody>
           </table>
-          <button className="flex items-center text-blue-500 mt-2">
+          <button className="flex items-center text-blue-500 mt-2 text-sm md:text-base">
             <FaPencilAlt size={16} className="mr-1" />
             Suggest new hours
           </button>
@@ -114,12 +121,12 @@ const BrandDesc = () => {
       </section>
 
       {/* Photos Section */}
-      <section ref={photosRef} className="p-6  border-solid border-[1px] ">
-        <h2 className="text-2xl font-semibold mb-4">Photos</h2>
-        <div className="grid grid-cols-2 gap-4 mb-4">
+      <section ref={photosRef} className="p-4 md:p-6 border-solid border-[1px]">
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Photos</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div className="relative">
             <img
-              src="https://images-platform.99static.com//LR3vZ2VswCVdEntk7kCSkfVPviI=/323x1566:991x2233/fit-in/500x500/projects-files/40/4027/402713/f1176a7c-7d6d-4ec0-9609-c6f297905158.png"
+              src="/api/placeholder/400/320"
               alt="iSaral logo"
               className="w-full h-40 object-cover rounded-lg"
             />
@@ -129,7 +136,7 @@ const BrandDesc = () => {
           </div>
           <div className="relative bg-gray-100 rounded-lg flex items-center justify-center h-40">
             <img
-              src="https://i.ytimg.com/vi/QyhwSYhX09s/maxresdefault.jpg"
+              src="/api/placeholder/400/320"
               alt="Company video"
               className="w-full h-full object-cover rounded-lg opacity-50"
             />
@@ -146,7 +153,7 @@ const BrandDesc = () => {
             <p className="text-gray-600 text-sm">1 Video</p>
           </div>
         </div>
-        <button className="bg-blue-500 text-white py-2 px-4 rounded-lg flex items-center justify-center">
+        <button className="bg-blue-500 text-white py-2 px-4 rounded-lg flex items-center justify-center w-full sm:w-auto">
           <IoCloudUploadOutline className="mr-2" size={20} />
           Upload Photos
         </button>
@@ -155,17 +162,17 @@ const BrandDesc = () => {
       {/* Key Insights Section */}
       <section
         ref={keyInsightsRef}
-        className="p-6 border-solid border-[1px] "
+        className="p-4 md:p-6 border-solid border-[1px]"
       >
-        <h2 className="text-2xl font-semibold mb-4">Key Insights</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Key Insights</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="border border-dashed border-gray-300 rounded-lg p-4">
-            <h3 className="flex items-center text-lg font-semibold text-green-600 mb-3">
+            <h3 className="flex items-center text-base md:text-lg font-semibold text-green-600 mb-3">
               <TiThumbsUp className="mr-2" />
               What users liked
             </h3>
-            <ul className="list-disc pl-5 space-y-2">
+            <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
               <li>Quick and easy connection</li>
               <li>Prompt and professional responses to queries</li>
               <li>
@@ -174,15 +181,17 @@ const BrandDesc = () => {
                 details, installing software, etc.
               </li>
             </ul>
-            <button className="text-blue-500 mt-3">More</button>
+            <button className="text-blue-500 mt-3 text-sm md:text-base">
+              More
+            </button>
           </div>
 
           <div className="border border-dashed border-gray-300 rounded-lg p-4">
-            <h3 className="flex items-center text-lg font-semibold text-red-600 mb-3">
+            <h3 className="flex items-center text-base md:text-lg font-semibold text-red-600 mb-3">
               <FaChartLine className="mr-2" />
               What can be improved
             </h3>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 text-sm md:text-base">
               <li>No specific dislikes mentioned in the reviews</li>
             </ul>
           </div>
@@ -195,16 +204,21 @@ const BrandDesc = () => {
       </section>
 
       {/* Reviews Section */}
-      <section ref={reviewsRef} className=" border-solid border-[1px] p-6">
-        <h2 className="text-2xl font-semibold mb-4">Reviews & Ratings</h2>
+      <section
+        ref={reviewsRef}
+        className="border-solid border-[1px] p-4 md:p-6"
+      >
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          Reviews & Ratings
+        </h2>
 
         <div className="flex items-center mb-4">
-          <div className="bg-green-500 text-white text-3xl font-bold p-2 rounded mr-4">
+          <div className="bg-green-500 text-white text-2xl md:text-3xl font-bold p-2 rounded mr-4">
             4.8
           </div>
           <div>
-            <p className="font-semibold">370 Ratings</p>
-            <p className="text-sm text-gray-500">
+            <p className="font-semibold text-sm md:text-base">370 Ratings</p>
+            <p className="text-xs md:text-sm text-gray-500">
               JD rating index based on 370 ratings across the web
             </p>
           </div>
@@ -222,20 +236,20 @@ const BrandDesc = () => {
           ))}
         </div>
 
-        <div className="flex space-x-4">
-          <button className="flex items-center text-blue-500">
+        <div className="flex flex-wrap space-x-2 md:space-x-4">
+          <button className="flex items-center text-blue-500 text-sm md:text-base mb-2">
             <FaThumbsUp className="mr-1" />
             Like
           </button>
-          <button className="flex items-center text-blue-500">
+          <button className="flex items-center text-blue-500 text-sm md:text-base mb-2">
             <FaComment className="mr-1" />
             Comment
           </button>
-          <button className="flex items-center text-blue-500">
+          <button className="flex items-center text-blue-500 text-sm md:text-base mb-2">
             <FaShare className="mr-1" />
             Share
           </button>
-          <button className="flex items-center text-blue-500">
+          <button className="flex items-center text-blue-500 text-sm md:text-base mb-2">
             <FaEllipsisV className="mr-1" />
             More
           </button>

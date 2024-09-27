@@ -4,22 +4,35 @@ import SidebarContact from "./SidebarContact";
 import SideBarform from "./SideBarform";
 import BrandDetails from "./BrandDetails";
 import BrandDesc from "./BrandDesc";
-
+import QuoraForm from "../QuoraForm";
 
 const InnerHome = () => {
   return (
-    <div className="max-w-[1400px] flex flex-col w-full px-2 my-2 ">
-      <div className="flex flex-col items-center w-full my-2 gap-2 ">
-        <ImageGallery />
-        <BrandDetails />
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <ImageGallery />
+        </div>
+        <div className="">
+          <BrandDetails />
+        </div>
       </div>
-      <div className="flex flex-col md:flex-row w-full gap-2 my-2 justify-center   ">
-       <div className="md:w-[70%] w-full ">
-          <BrandDesc />
-       </div>
-        <div className="flex w-[30%] flex-col  ">
-          <SidebarContact />
-          <SideBarform />
+      <div className="mt-4 sm:mt-6 lg:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="lg:col-span-2">
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
+            <BrandDesc />
+          </div>
+          <div className="mt-3">
+            <QuoraForm />
+          </div>
+        </div>
+        <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
+            <SidebarContact />
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
+            <SideBarform />
+          </div>
         </div>
       </div>
     </div>
