@@ -30,7 +30,7 @@ const ServiceCard = ({ imageSrc, Service }) => {
 const RepairServices = () => {
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="h-[20vh] sm:h-[30vh] w-full">
+      <div className="h-[20vh] w-full">
         <img
           src="https://rapidsignsbc.com/wp-content/uploads/2016/10/repair-top-banner-2.jpg"
           className="h-full w-full object-cover object-center"

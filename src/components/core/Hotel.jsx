@@ -25,7 +25,7 @@ const HotelListing = () => {
   } = Hotel;
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[1400px] mt-4 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="flex flex-col sm:flex-row p-4 sm:p-6">
           <div className="w-full sm:w-1/3 lg:w-1/4 mb-4 sm:mb-0">

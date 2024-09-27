@@ -9,10 +9,10 @@ const RealEstate = () => {
     <div className=" ">
       <Accomdation />
       <FilterSection heading="Estate Agents In Mumbai" />
-      <div className="flex gap-2 ">
+      {/* <div className="flex gap-2 ">
         <Hotel />
         <Sidebar />
-      </div>
+      </div> */}
       <Hotel />
       <Hotel />
     </div>
