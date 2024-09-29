@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const LinksSection = () => {
+const Footer = () => {
   return (
     <div className="bg-white my-3 p-9 ">
       <hr className="border-gray-200 w-full mb-4 border" />
@@ -114,4 +114,4 @@ const LinksSection = () => {
   );
 };
 
-export default LinksSection;
+export default Footer;
