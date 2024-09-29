@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-        < div className = " max-w-[25%] sidebar w-[95%]  md:w-[24%]  flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 " >
+        < div className = "hidden md:block max-w-[25%] sidebar w-[95%]  md:w-[24%]  flex flex-col gap-2 border  border-gray-500 rounded-lg py-4 px-4 " >
           <h1 className="flex gap-1 font-semibold">
             Get the list of top <p className="text-blue-700">Banquet Halls</p>
           </h1>

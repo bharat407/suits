@@ -28,7 +28,7 @@ const HotelListing = () => {
   return (
     <>
       
-      <div className="max-w-[1400px] flex lg:flex-row flex-col bg-white shadow-lg gap-2 py-2 items-center px-2 mx-2 w-[72%] rounded-lg overflow-x-hidden">
+      <div className="max-w-[1400px] flex lg:flex-row flex-col bg-white shadow-lg gap-2 py-2 items-center px-2 mx-2 w-full md:w-[72%] rounded-lg overflow-x-hidden">
         <div className="flex  items-center relative w-full h-full py-6 gap-4 px-4 border-gray-500 border rounded-lg">
           <div className="w-[30%] ">
             <img
