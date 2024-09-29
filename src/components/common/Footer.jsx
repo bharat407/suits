@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LinksSection = () => {
+const Footer = () => {
   return (
     <div className="bg-white py-10 px-4">
       <div className="max-w-7xl mx-auto">
@@ -43,4 +43,4 @@ const LinksSection = () => {
   );
 };
 
-export default LinksSection;
+export default Footer;
