@@ -10,7 +10,9 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import InnerHome from "./components/core/innerSection/InnerHome";
 import Footer from "./components/common/Footer";
-import Register from "./components/common/Register";
+import Add from "./admin/pages/AddCategory";
+import Display from "./admin/pages/DispayCategory";
+import Login from "./admin/pages/Login";
 
 const App = () => {
   return (
@@ -23,8 +25,9 @@ const App = () => {
         <Route path="/repair" element={<Repair />}></Route>
         <Route path="/quora" element={<Quora />}></Route>
         <Route path="/innerhome" element={<InnerHome />}></Route>
-        {/* <Route path="/login" element={<Login />}></Route> */}
-        <Route path="/register" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/addcategory" element={<Add />}></Route>
+        <Route path="/displaycategory" element={<Display />}></Route>
       </Routes>
       <Analytics />
       <SpeedInsights />
